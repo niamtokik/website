@@ -1,9 +1,9 @@
-include/
-bin/
-lib/
-pip-selfcheck.json
-niamtokik.github.io/
-pelican-plugins/
 *.pyc
-
-
+bin/
+include/
+lib/
+niamtokik.github.io/
+niamtokik.github.io_dev/
+pelican-plugins/
+pelican-themes/
+pip-selfcheck.json

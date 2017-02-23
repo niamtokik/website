@@ -1,7 +1,10 @@
-OUTPUT_PATH = "./niamtokik.github.io"
-PLUGIN_PATHS = ["./pelican-plugins"]
-PLUGINS = ["asciidoc_reader"] 
-PATH = "./website"
-SITEURL = "https://niamtokik.github.io"
 ASCIIDOC_BACKEND = "html"
 AUTHOR = "Mathieu Kerjouan"
+OUTPUT_PATH = "./niamtokik.github.io"
+PATH = "./website"
+PLUGINS = ["asciidoc_reader"] 
+PLUGIN_PATHS = ["./pelican-plugins"]
+SITENAME = "-- Explicit Programming"
+SITESUBTITLE = "Questions, Answers and Reflexions."
+SITEURL = "https://niamtokik.github.io"
+THEME = "./pelican-themes/sneakyidea"
