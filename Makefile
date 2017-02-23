@@ -95,11 +95,11 @@ pelican-themes:
 TITLE != date +"%Y-%m-%dT%H:%M:%S"
 .endif
 article:
-	touch $(WEBSITE)/$(TITLE).asciidoc
+	cp template/article.asciidoc $(WEBSITE)/$(TITLE).asciidoc
 	$(EDITOR) $(WEBSITE)/$(TITLE).asciidoc
 
 page:
-	touch $(WEBSITE)/pages/$(TITLE).asciidoc
+	cp template/page.asciidoc $(WEBSITE)/pages/$(TITLE).asciidoc
 	$(EDITOR) $(WEBSITE)/pages/$(TITLE).asciidoc
 
 ######################################################################

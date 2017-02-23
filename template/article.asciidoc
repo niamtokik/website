@@ -1,0 +1,13 @@
+= Article Title
+
+:date:	   2010-10-03 10:20
+:modified: 2010-10-04 18:40
+:tags:	   	      
+:category: coding
+:slug:	   my-super-post
+:authors:  Mathieu Kerjouan
+:summary:  Short version for index and feeds
+
+== Subtitle
+
+My text here...

@@ -1,0 +1,60 @@
+= Why using Go? Why using Erlang?
+
+:date:	   2017-02-23 18:00
+:modified: 2017-02-23 18:00
+:tags:	   erlang, go
+:category: coding
+:authors:  Mathieu Kerjouan
+:summary:  Questions about Go and Erlang
+
+== Erlang
+
+.All is data
+[erlang]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+my_function() ->
+  {ok, return}.
+
+my_function(X) when X < 0 ->
+  {error, negative_value};
+my_function(X) when X > 0 ->
+  {ok, integer};
+my_function(_) ->
+  {error, bad_args}.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.Recursion is everywhere
+[erlang]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+my_loop(Start, End) when Start > End ->
+  my_loop(Start+1, End).
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.Pattern matching help you
+[erlang]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pattern({ok, Data}) ->
+  Data;
+pattern{error, Reason}) ->
+  erlang:throw(Reason);
+patter(_) ->
+  {error, not_matched}.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.Simply spawn
+[erlang]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+start(X) ->
+  erlang:spawn(fun() -> ok end).
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.Sending message
+[erlang]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+message(Pid, Message) ->
+  Pid ! Message.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== Go
+
+== Compare
