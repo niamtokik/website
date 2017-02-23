@@ -115,5 +115,5 @@ bootstrap:
 deploy: prod
 	cd $(REPOSITORY) && \
 		git add . && \
-		git commit && \
+		git commit -m "automatic deploy from Makefile" && \
 		git push
