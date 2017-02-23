@@ -45,7 +45,7 @@ bootstrap:
 	./bin/pip install pelican
 
 deploy: prod
-	cd $(REPOSITORY)
-	git add .
-	git commit
-	git push
+	cd $(REPOSITORY) && \
+		git add && \
+		git commit && \
+		git push
