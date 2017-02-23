@@ -1,8 +1,8 @@
 = Using Pelican on OpenBSD-current with Asciidoc and github.io
 
-:date: 		2017-02-23 00:00
-:modified: 	2017-02-23 00:00
-:tags: 		openbsd, pelican, python, coding
+:date: 		2017-02-23 10:00
+:modified: 	2017-02-23 15:10
+:tags: 		openbsd, pelican, python, coding, makefile
 :category: 	coding
 :slug: 		openbsd-pelican-asciidoc
 :authors: 	Mathieu Kerjouan
@@ -22,6 +22,8 @@ pkg_add py-virtualenv python-2.7 asciidoc
    Makefile
    pelicanconf.py
    pelicanconf_dev.py
+   pelican-plugins/
+   pelican-themes/
    template/
      page.asciidoc
      article.asciidoc
@@ -57,32 +59,56 @@ virtualenv .
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 cd repositories
 cat >> pelicanconf.py << __EOF__
-PATH="website"
-PLUGIN_PATH=["./pelican-plugins"]
-PLUGINS=["asciidoc_reader"]
-AUTHOR="Me"
+ASCIIDOC_BACKEND = "html"
+AUTHOR = "Mathieu Kerjouan"
+OUTPUT_PATH = "./niamtokik.github.io"
+PATH = "./website"
+PLUGINS = ["asciidoc_reader"]
+PLUGIN_PATHS = ["./pelican-plugins"]
+SITENAME = "-- Explicit Programming"
+SITESUBTITLE = "Questions, Answers and Reflexions."
+SITEURL = "https://niamtokik.github.io"
+THEME = "./pelican-themes/sneakyidea"
 __EOF__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+NOTE: asciidoc seems buggy with source-highlight command. You need
+to force backend to `html` else you'll have some issue with block
+generation.
 
 .Pelican test configuration file (dev)
 [sh]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 cat >> pelicanf_dev.py << __EOF__
-SITESUBTITLE = "my title"
-PATH = "website"
-PLUGIN_PATH = ["./pelican-plugins"]
+ASCIIDOC_BACKEND = "html"
+OUTPUT_PATH = "./niamtokik.github.io_dev"
+PATH = "./website"
 PLUGINS = ["asciidoc_reader"]
-AUTHOR = "Me"
+PLUGIN_PATHS = ["./pelican-plugins"]
 RELATIVE_URLS = True
+SITENAME = "-- Explicit Programming"
+SITESUBTITLE = "Questions, Answers and Reflexions."
+THEME = "./pelican-themes/sneakyidea"
 __EOF__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 == Get asciidoc_reader module
 
+I prefer asciidoc, I write all my documentation and training support
+with it, and currently, I didn't see others alternatives. Pelican can
+use asciidoc (asciidoc used python2, its why we need to make
+separate virtualenv with python-2.7).
+
 [sh]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 cd repositories
 git clone https://github.com/getpelican/pelican-plugins.git
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== Get pelican themes
+
+[sh]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 == Initialize website tree
@@ -98,28 +124,108 @@ mkdir website/content/pages
 
 == Makefile creation
 
+Makefile is important here. Pelican isn't easy to configure (really). 
+So I've made simple Makefile helper to deploy and add automatically 
+new pages and articles.
+
 [makefile]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+######################################################################
+# Makefile helper to pelican static site generator                   #
+######################################################################
 REPOSITORY ?= niamtokik.github.io
+GITHUB ?= git@github.com:niamtokik/$(REPOSITORY).git
 WEBSITE ?= website
 
 .ifndef EDITOR
 EDITOR := mg
 .endif
 
-prod:
-        ./bin/pelican
+######################################################################
+# usage
+######################################################################
+help:
+        @echo "usage: make [init|prod|dev|deploy]"
 
-dev:
-        ./bin/pelican -s peliconf_dev.py
+######################################################################
+# build prod release: need pelicanconf.py
+######################################################################
+prod: $(REPOSITORY)
+        ./bin/pelican -o $(REPOSITORY)
 
-article:
-        touch $(WEBSITE)/$(TITLE).asciidoc
+######################################################################
+# build dev release: need pelicanconf_dev.py
+######################################################################
+dev: pelicanconf_dev.py
+        ./bin/pelican -s pelicanconf_dev.py -o $(REPOSITORY)_dev
 
+pelicanconf_dev.py:
+        @echo "error! pelicanconf_dev.py doesn't exist!"
+
+######################################################################
+# repository clone
+######################################################################
+$(REPOSITORY):
+        git clone $(GITHUB)
+
+######################################################################
+# init functions
+######################################################################
+init: bootstrap init-plugins init-themes init-website init-template
+
+init-plugins: pelican-plugins
+
+init-themes: pelican-themes
+
+init-website: website/content/category website/content/pages
+
+init-template: template/page.asciidoc template/article.asciidoc
+
+######################################################################
+# website directory
+######################################################################
+website:
+        mkdir $@
+
+website/content: website
+        mkdir $@
+
+website/content/category: website/content
+        mkdir $@
+
+website/content/pages: website/content
+        mkdir $@
+
+######################################################################
+# template directory
+######################################################################
+template:
+        mkdir template
+
+template/page.asciidoc: template
+        touch $@
+
+template/article.asciidoc: template
+        touch $@
+
+######################################################################
+# pelican external plugin: need git
+######################################################################
+pelican-plugins:
+        git clone https://github.com/getpelican/pelican-plugins.git
+
+######################################################################
+# pelican external themes: need git
+######################################################################
+pelican-themes:
+        git clone https://github.com/niamtokik/pelican-themes.git
+
+######################################################################
+# article and page creation helper
+######################################################################
 .ifndef TITLE
 TITLE != date +"%Y-%m-%dT%H:%M:%S"
 .endif
-
 article:
         touch $(WEBSITE)/$(TITLE).asciidoc
         $(EDITOR) $(WEBSITE)/$(TITLE).asciidoc
@@ -128,19 +234,19 @@ page:
         touch $(WEBSITE)/pages/$(TITLE).asciidoc
         $(EDITOR) $(WEBSITE)/pages/$(TITLE).asciidoc
 
+######################################################################
+# python virtualenv bootstrap helper
+######################################################################
 bootstrap:
         virtualenv .
         ./bin/pip install pelican
 
+######################################################################
+# deploy repository in production: need git
+######################################################################
 deploy: prod
-        cd $(REPOSITORY)
-        git push
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-== Making templates
-
-[sh]
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-cd repositories
-mkdir template
+        cd $(REPOSITORY) && \
+                git add . && \
+                git commit && \
+                git push
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
