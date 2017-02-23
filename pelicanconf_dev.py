@@ -6,4 +6,4 @@ PLUGIN_PATHS = ["./pelican-plugins"]
 RELATIVE_URLS = True
 SITENAME = "-- Explicit Programming"
 SITESUBTITLE = "Questions, Answers and Reflexions."
-THEME = "./pelican-themes/sneakyidea"
+THEME = "./niamtokik-theme"
