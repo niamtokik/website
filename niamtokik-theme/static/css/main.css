@@ -15,8 +15,6 @@
 /***** Global *****/
 /* Body */
 body {
-    background: #6d9a31 url('../images/bg.png');
-    background-repeat: repeat-x;
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,8 +23,6 @@ body {
     padding: 0;
     text-align: left;
 }
-
-
 
 /* Headings */
 h1 {font-size: 2em }
@@ -102,7 +98,11 @@ dl {margin: 0 0 1.5em 0;}
 dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
 
-pre{background-color: #000; padding: 10px; color: #fff; margin: 10px; overflow: auto;}
+pre {
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+}
 
 /* Quotes */
 blockquote {
@@ -114,27 +114,29 @@ cite {}
 q {}
 
 /* Tables */
-table {margin: .5em auto 1.5em auto; width: 98%;}
+table {
+    margin: .5em auto 1.5em auto; width: 98%;
+}
 	
-	/* Thead */
-	thead th {padding: .5em .4em; text-align: left;}
-	thead td {}
+/* Thead */
+thead th {padding: .5em .4em; text-align: left;}
+thead td {}
 
-	/* Tbody */
-	tbody td {padding: .5em .4em;}
-	tbody th {}
-	
-	tbody .alt td {}
-	tbody .alt th {}
-	
-	/* Tfoot */
-	tfoot th {}
-	tfoot td {}
+/* Tbody */
+tbody td {padding: .5em .4em;}
+tbody th {}
+
+tbody .alt td {}
+tbody .alt th {}
+
+/* Tfoot */
+tfoot th {}
+tfoot td {}
 	
 /* HTML5 tags */
 header, section, footer,
 aside, nav, article, figure {
-	display: block;
+    display: block;
 }
 
 /* Google +1 button positionning bug workaround */
@@ -143,110 +145,118 @@ iframe {
 }
 
 /***** Layout *****/
-.body {clear: both; margin: 0 auto; width: 800px;}
-img.right figure.right {float: right; margin: 0 0 2em 2em;}
-img.left, figure.left {float: right; margin: 0 0 2em 2em;}
+.body {
+    clear: both;
+    margin: 0 auto;
+    width: 800px;
+}
 
-/*
-	Header
-*****************/
+img.right figure.right {
+    float: right;
+    margin: 0 0 2em 2em;
+}
+
+img.left, figure.left {
+    float: right;
+    margin: 0 0 2em 2em;
+}
+
 #banner {
 	margin: 0 auto;
 	padding: 2.5em 0 0 0;
 }
 
-	/* Banner */
-	#banner h1 {font-size: 3.571em; margin-bottom: 0em;}
-	#banner h1 a:link, #banner h1 a:visited {
-		color: #000305;
-		display: block;
-		font-weight: bold;
-		text-decoration: none;
-		width: 800px;
-	}
-	#banner h1 a:hover, #banner h1 a:active {
-		background: none;
-		color: #dbdbdb;
-		text-shadow: none;
-	}
-	
-	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
-	
-	/* Main Nav */
-	#banner nav {
-		background: #000;
-		font-size: 1.143em;
-		height: 40px;
-		line-height: 30px;
-		margin: 0 auto 2em auto;
-		padding: 0;
-		text-align: center;
-		width: 800px;
-		
-		border-radius: 5px;
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
-	}
-	
-	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
-	#banner nav li {float: left; display: inline; margin: 0;}
-	
-	#banner nav a:link, #banner nav a:visited {
-		color: #fff;
-		display: inline-block;
-		height: 30px;
-		padding: 5px 1.5em;
-		text-decoration: none;
-	}
-	#banner nav a:hover, #banner nav a:active,
-	#banner nav .active a:link, #banner nav .active a:visited {
-		background: #F5F4EF;
-                color: #000;
-                text-shadow: none !important;
-	}
-	
-	#banner nav li:first-child a {
-		border-top-left-radius: 5px;
-		-moz-border-radius-topleft: 5px;
-		-webkit-border-top-left-radius: 5px;
-		
-		border-bottom-left-radius: 5px;
-		-moz-border-radius-bottomleft: 5px;
-		-webkit-border-bottom-left-radius: 5px;
-	}
+#banner h1 {
+    font-size: 3.571em;
+    margin-bottom: 0em;
+}
 
-/*
-	Featured
-*****************/
-#featured {
-	background: #F5F4EF;
-	margin-bottom: 2em;
-	overflow: hidden;
-	padding: 20px;
-	width: 760px;
+#banner h1 a:link, #banner h1 a:visited {
+    color: #000305;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    width: 800px;
+}
+
+#banner h1 a:hover, #banner h1 a:active {
+    background: none;
+    color: #dbdbdb;
+    text-shadow: none;
+}
 	
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+	
+#banner nav {
+    background: #000;
+    font-size: 1.143em;
+    height: 40px;
+    line-height: 30px;
+//    margin: 0 auto 2em auto;
+    padding: 0;
+    text-align: center;
+    width: 800px;
+}
+	
+#banner nav ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 800px;
+}
+
+#banner nav li {
+    float: left;
+    display: inline;
+    margin: 0;
+}
+
+#banner nav a:link, #banner nav a:visited {
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1.5em;
+    text-decoration: none;
+}
+
+#banner nav a:hover, #banner nav a:active,
+#banner nav .active a:link, #banner nav .active a:visited {
+    background: #F5F4EF;
+    color: #000;
+    text-shadow: none !important;
 }
 
 #featured figure {
-	border: 2px solid #eee;
-	float: right;
-	margin: 0.786em 2em 0 5em;
-	width: 248px;
+    border: 2px solid #eee;
+    float: right;
+    margin: 0.786em 2em 0 5em;
+    width: 248px;
 }
-#featured figure img {display: block; float: right;}
 
-#featured h2 {color: #6d9a31; font-size: 1.714em; margin-bottom: 0.333em;}
-#featured h3 {font-size: 1.429em; margin-bottom: .5em;}
+#featured figure img {
+    display: block;
+    float: right;
+}
 
-#featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
-#featured h3 a:hover, #featured h3 a:active {color: #fff;}
+#featured h2 {
+    color: #6d9a31;
+    font-size: 1.714em;
+    margin-bottom: 0.333em;
+}
 
-/*
-	Body
-*****************/
+#featured h3 {
+    font-size: 1.429em;
+    margin-bottom: .5em;
+}
+
+#featured h3 a:link, #featured h3 a:visited {
+    color: #000305;
+    text-decoration: none;
+}
+
+#featured h3 a:hover, #featured h3 a:active {
+    color: #fff;
+}
+
 #content {
 	background: #F5F4EF;
 	margin-bottom: 2em;
@@ -315,21 +325,13 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		.social a[href*='linkedin.com'] {background-image: url('../images/icons/linkedin.png');}
 		.social a[href*='github.com'] {background-image: url('../images/icons/github.png');}
 
-/*
-	Tag Cloud
-*****************/
 #cloud {list-style-type: none;}
-
 #cloud li {float: left;}
-
 #cloud .tag-1 {font-size: 3em; line-height: 1;}
 #cloud .tag-2 {font-size: 2em; line-height: 1.5;}
 #cloud .tag-3 {font-size: 1.5em; line-height: 2;}
 #cloud .tag-4 {font-size: 1em; line-height: 3;}
 
-/*
-	About
-*****************/
 #about {
 	background: #000305;
 	color: #fff;
@@ -348,18 +350,12 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 #about .primary {float: left; width: 165px;}
 #about .primary strong {color: #C64350; display: block; font-size: 1.286em;}
 #about .photo {float: left; margin: 5px 20px;}
-
 #about .url:link, #about .url:visited {text-decoration: none;}
-
 #about .bio {float: right; width: 500px;}
 
-/*
-	Footer
-*****************/
+
 #contentinfo {padding-bottom: 2em; text-align: right;}
-
 #contentinfo a:link, #contentinfo a:visited {color: /*#444*/#fff;}
-
 #contentinfo a:hover, #contentinfo a:active {color: #fff;}
 
 
@@ -369,6 +365,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	border-bottom: 1px solid #eee;
 	padding: 1.5em 0;
 }
+
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}

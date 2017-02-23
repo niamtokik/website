@@ -7,4 +7,4 @@ PLUGIN_PATHS = ["./pelican-plugins"]
 SITENAME = "-- Explicit Programming"
 SITESUBTITLE = "Questions, Answers and Reflexions."
 SITEURL = "https://niamtokik.github.io"
-THEME = "./pelican-themes/sneakyidea"
+THEME = "./niamtokik-theme"
