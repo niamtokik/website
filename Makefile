@@ -1,12 +1,19 @@
 REPOSITORY ?= niamtokik.github.io
+GITHUB ?= git@github.com:niamtokik/niamtokik.github.io.git
 WEBSITE ?= website
 
 .ifndef EDITOR
 EDITOR := mg
 .endif
 
+prod:
+	./bin/pelican
+
+dev:
+	./bin/pelican -s pelicanconf_dev.py
+
 clone:
-	git clone $(REPOSITORY)
+	git clone $(GITHUB)
 
 init:
 	mkdir website
@@ -20,11 +27,7 @@ init:
 init-plugins:
 	git clone https://github.com/getpelican/pelican-plugins.git
 
-prod:
-	./bin/pelican
 
-dev:
-	./bin/pelican -s pelicanconf_dev.py
 
 .ifndef TITLE
 TITLE != date +"%Y-%m-%dT%H:%M:%S"
@@ -43,6 +46,6 @@ bootstrap:
 
 deploy: prod
 	cd $(REPOSITORY)
-	git add *
+	git add .
 	git commit
 	git push

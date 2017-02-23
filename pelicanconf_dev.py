@@ -4,4 +4,4 @@ PLUGINS = ["asciidoc_reader"]
 PATH = "./website"
 RELATIVE_URLS = True
 SITESUBTITLE = "test"
-ASCIIDOC_BACKEND = 'html5'
+ASCIIDOC_BACKEND = "html"

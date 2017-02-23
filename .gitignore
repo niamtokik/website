@@ -1,0 +1,8 @@
+include/
+bin/
+lib/
+pip-selfcheck.json
+niamtokik.github.io/
+pelican-plugins/
+
+

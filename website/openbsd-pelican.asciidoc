@@ -1,0 +1,146 @@
+= Using Pelican on OpenBSD-current with Asciidoc and github.io
+
+:date: 		2017-02-23 00:00
+:modified: 	2017-02-23 00:00
+:tags: 		openbsd, pelican, python, coding
+:category: 	coding
+:slug: 		openbsd-pelican-asciidoc
+:authors: 	Mathieu Kerjouan
+
+== Required packages
+
+[sh]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pkg_add py-virtualenv python-2.7 asciidoc
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== Final tree
+
+[sh]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ repositories/
+   Makefile
+   pelicanconf.py
+   pelicanconf_dev.py
+   template/
+     page.asciidoc
+     article.asciidoc
+   niamtokik.github.io/
+   website/
+     content/
+       category/
+         *.asciidoc
+       pages/
+         *.asciidoc
+       *.asciidoc
+   ---- virtualenv ----
+   bin/
+   include/
+   lib/
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== Initialize repository and virtualenv
+
+[sh]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+mkdir repositories
+cd repositories
+git clone https://github.com/niamtokik/niamtokik.github.io
+virtualenv .
+./bin/pip install pelican
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== Configure pelican
+
+.Pelican default configuration file (prod)
+[sh]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cd repositories
+cat >> pelicanconf.py << __EOF__
+PATH="website"
+PLUGIN_PATH=["./pelican-plugins"]
+PLUGINS=["asciidoc_reader"]
+AUTHOR="Me"
+__EOF__
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.Pelican test configuration file (dev)
+[sh]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cat >> pelicanf_dev.py << __EOF__
+SITESUBTITLE = "my title"
+PATH = "website"
+PLUGIN_PATH = ["./pelican-plugins"]
+PLUGINS = ["asciidoc_reader"]
+AUTHOR = "Me"
+RELATIVE_URLS = True
+__EOF__
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== Get asciidoc_reader module
+
+[sh]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cd repositories
+git clone https://github.com/getpelican/pelican-plugins.git
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== Initialize website tree
+
+[sh]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cd repositories/niamtokik.github.io
+mkdir website/
+mkdir website/content/
+mkdir website/content/category
+mkdir website/content/pages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== Makefile creation
+
+[makefile]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+REPOSITORY ?= niamtokik.github.io
+WEBSITE ?= website
+
+.ifndef EDITOR
+EDITOR := mg
+.endif
+
+prod:
+        ./bin/pelican
+
+dev:
+        ./bin/pelican -s peliconf_dev.py
+
+article:
+        touch $(WEBSITE)/$(TITLE).asciidoc
+
+.ifndef TITLE
+TITLE != date +"%Y-%m-%dT%H:%M:%S"
+.endif
+
+article:
+        touch $(WEBSITE)/$(TITLE).asciidoc
+        $(EDITOR) $(WEBSITE)/$(TITLE).asciidoc
+
+page:
+        touch $(WEBSITE)/pages/$(TITLE).asciidoc
+        $(EDITOR) $(WEBSITE)/pages/$(TITLE).asciidoc
+
+bootstrap:
+        virtualenv .
+        ./bin/pip install pelican
+
+deploy: prod
+        cd $(REPOSITORY)
+        git push
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== Making templates
+
+[sh]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cd repositories
+mkdir template
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
