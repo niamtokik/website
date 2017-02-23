@@ -114,6 +114,6 @@ bootstrap:
 ######################################################################
 deploy: prod
 	cd $(REPOSITORY) && \
-		git add && \
+		git add . && \
 		git commit && \
 		git push
