@@ -1,8 +1,3 @@
-//////////////////////////////////////////////////////////////////////
-Copyright 2016 by Mathieu Kerjouan <contact@steepath.eu>
-All Rights Reserved
-//////////////////////////////////////////////////////////////////////
-
 = Android, Creev Mark V et Remarques
 
 :date:          2017-03-01 19:00
@@ -10,6 +5,7 @@ All Rights Reserved
 :tags:          android, creev, mark-v
 :category:      notes
 :authors:       Mathieu Kerjouan
+:status:	draft
 
 == Creev Mark V
 

@@ -6,6 +6,7 @@
 :category: coding
 :authors:  Mathieu Kerjouan
 :summary:  Questions about Go and Erlang
+:status:   draft
 
 == Erlang
 

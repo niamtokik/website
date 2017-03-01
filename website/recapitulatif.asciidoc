@@ -11,6 +11,7 @@ All Rights Reserved
 :tags:          openbsd, pelican, python, coding, makefile
 :category:      coding
 :authors:       Mathieu Kerjouan
+:status:	draft
 
 == Introduction
 
