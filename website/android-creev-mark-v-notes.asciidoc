@@ -1,0 +1,30 @@
+//////////////////////////////////////////////////////////////////////
+Copyright 2016 by Mathieu Kerjouan <contact@steepath.eu>
+All Rights Reserved
+//////////////////////////////////////////////////////////////////////
+
+= Android, Creev Mark V et Remarques
+
+:date:          2017-03-01 19:00
+:modified:      2017-03-01 19:00
+:tags:          android, creev, mark-v
+:category:      notes
+:authors:       Mathieu Kerjouan
+
+== Creev Mark V
+
+ * https://www.amazon.fr/Creev-Mark-Plus-Smartphone-Bluetooth/dp/B01N3SB0R2
+ * http://creev.com/
+
+== Android Marshmallow (6.0)
+
+ * https://www.android.com/versions/marshmallow-6-0/
+ * https://developer.android.com/about/versions/marshmallow/android-6.0-changes.html
+ * https://en.wikipedia.org/wiki/Android_Marshmallow
+
+== Outils externes
+
+ * https://www.aptoide.com/
+ * https://f-droid.org/
+
+

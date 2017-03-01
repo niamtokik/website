@@ -1,0 +1,1008 @@
+//////////////////////////////////////////////////////////////////////
+Copyright 2016 by Mathieu Kerjouan <contact@steepath.eu>
+Copyright 2016 by Steepath <contact@steepath.eu>
+All Rights Reserved
+//////////////////////////////////////////////////////////////////////
+
+= Bilan
+
+:date:          2017-02-24 10:00
+:modified:      2017-02-24 15:10
+:tags:          openbsd, pelican, python, coding, makefile
+:category:      coding
+:authors:       Mathieu Kerjouan
+
+== Introduction
+
+Le texte ci-dessous résume les 15 derniers mois d'activités. Il y a de
+ça plus  d'un an, j'ai  décidé de  tester la création  d'entreprise et
+essayé d'en vivre. Me lancer corps et âme dans un milieu hostile.
+
+Le texte  est découpé par  mot clé,  un verbe d'action,  permettant de
+délimiter les changements clés de  la vie d'un entrepreneur, ainsi que
+son état à un moment donné.
+
+== S'engager
+
+«Pourquoi entreprendre?  Pourquoi prendre des risques?»  ces questions
+m'ont été  posées un  nombre incalculable  de fois,  et la  plupart du
+temps,  j'essayais  de   me  débattre  et  d'y   trouver  une  réponse
+constructive, intelligente  et accessible  à tous.   Puis, je  me suis
+résigné, j'ai répondu simplement: «pour en vivre».
+
+La  plupart des  personnes  posant ces  questions  ne comprennent  pas
+pourquoi, encore plus pendant une «période crise», prendre des risques
+inconsidéré.  Risquer son  poste, risquer  sa "renommée",  risquer son
+confort de tous les jours ainsi que sa carrière. Alors pourquoi?
+
+Parce que je  désire en savoir plus sur la  situation du monde actuel,
+et  son fonctionnement.  N'avez vous  jamais été  curieux et  vourloir
+savoir  pourquoi et  comment  on est  réellement  recruté? D'où  vient
+l'argent d'une société?  Comment les entreprises débutent?  Quels sont
+les relations  entre les  acteurs de la  vie économique?  J'ai souvent
+posé  ces  questions  mais  les  réponses  n'étaient  pas  celles  que
+j'attendaient. La  meilleure façon dans  ces cas là,  pour comprendre,
+c'est de découvrir les réponses par soi-même.
+
+Parce que cracher  continuellement sur la société  de consommation, ou
+sur le modèle capitalo-libéraliste sans le connaitre en profondeur est
+une  absurdité.   Nous sommes  à  une  époque  où nous  cherchons  des
+alternatives. Comment trouver une alternative si nous n'avons pas vécu
+nous-même les problématiques  des personnes qui vivent  tous les jours
+avec et dans ce modèle?
+
+Parce  que  je  suis engagé,  même  si  il  m'a  fallu du  temps  pour
+l'admettre. Engagé pour lutter contre les inégalités insidieuses de la
+vie.   Engagé  pour agir  plutôt  que  de  parler.  Engagé  contre  la
+propagande nauséabonde  généré par la société  de consommation. Engagé
+pour aider  les plus faibles  à ne pas se  faire bouffer par  tous les
+niveaux de la  malhonnêté . Engagé contre les illusions  créé de toute
+pièce par  les auteurs de  la pourriture environnante.   Engagé contre
+l'inculture et  pour le partage  du savoir,  de la connaissance  et de
+l'expérience. Engagé  pour rendre le monde  plus simple et non  pas le
+complexifié  artificiellement. Je  dirais bien  engagé pour  rendre le
+monde meilleur, mais je ne désire pas jouer les startups de bas étage.
+
+On ne  nait pas indépendant  ou entrepreneur. Le terme  est d'ailleurs
+assez paradoxal,  car nous sommes  toujours dépendant des  autres pour
+vivre,  que  ce  soit  de  nos  parents, de  nos  proches  ou  de  nos
+connaissances.   Avant de  devenir indépendant,  comme tout  le monde,
+j'ai  été salarié,  dépendant du  monde du  travail pour  survivre. Le
+monde du  travail, est horrible et  abject.  On nous parle  souvent de
+l'esclavagisme, mais l'avenir nous  verra comme une société esclaviste
+et immorale (si cette société évolue dans le sens de l'humain).
+
+Qui  connait les  règles  monétaires?  Les  règles  du travails?   Qui
+contrôle ces entitées?  L'exploitation de  la masse salariale est bien
+souvent régies par des règles opaques  et cachés, mettant en défaut le
+travailleur  et  donnant  bien  souvent toute  puissance  aux  grandes
+structures. Évidemment, je parle  des grandes structures, les petites,
+elles,  subissent comme  tout le  monde les  outrages des  tempêtes de
+l'économies.
+
+Le mépris,  le non  respect des normes,  la manipulation,  le chantage
+voir le harcèlement font partis de la vie de nombreux salariés.  Après
+presque  10 ans  d'ancienneté et  d'expérience dans  pratiquement tout
+type de  structure, le constat  est amer.  Si  comme moi vous  avez eu
+l'occasion de travailler  dans une société de  service en informatique
+(SSII ou ESN), vous avez  peut-être même subis l'incidieux nivellement
+vers le  bas.  «Vous êtes  arrivé ingénieur?  On vous promet  que vous
+ressortirez avec un niveau de technicien de première année!»
+
+Le salarié est  un humain, mais dans le monde  du travail, c'est avant
+tout une  ressource. Une ressource  que l'on peut chiffrer,  garder ou
+jeter. Le concept de salarié en tant qu'humain n'est pas encore arrivé
+dans nos sociétés occidentales, il  semblerait.  «Remettre au coeur de
+l'entreprise  le salarié»,  j'entends  cette  phrase depuis  tellement
+longtemps que je  me demande si je le verrais  un jour. L'absurdité de
+notre système  actuel est pourtant  bien réel.  Le salarié  n'agit pas
+dans  son  intérêt mais  dans  l'intérêt  d'autres personnes,  souvent
+cachés, tel que des investisseurs ou autres actionnaires.
+
+----
+
+Le pré-salarié,  abusé par  le système, devra  tout d'abord  passer un
+diplôme (d'état de préférence), durement gagné à rester sur une chaise
+et ingurgiter des quantités d'informations incroyables, et ce 8 heures
+par  jours pendant  presque 20ans  (si on  compte l'école  maternelle,
+primaire, le collège, le lycée, les études supérieurs). Le pré-salarié
+avantagé par l'argent,  aura quant-à lui le  droit d'échouer plusieurs
+fois à son diplôme, qu'il pourra repasser quand bon lui semble...  Son
+entrée dans  le monde du travail  n'en sera que plus  douloureux et on
+lui fera comprendre que tout ce qu'il a du apprendre durant ces années
+se trouvent, purement et simplement, de la merde.
+
+----
+
+Avez-vous des  enfants?  Pour ma  part: non.   Je serais tout  de même
+curieux de savoir comment expliquer  à ses enfants l'utilité d'aller à
+l'école après  avoir subis  ce genre de  traitement. Ne  serait-il pas
+plus logique et  raisonnable de simplement leur dire: «Fais  ce qui te
+plait, expérimente, on est jeune qu'une fois»?
+
+Certains salariés  décident tout  de même de  prendre des  mesures, et
+essayent de  changer le  système à leur  niveau. Certains  d'entre eux
+s'engagent, que ce  soit avec des syndicats, dans  des associations ou
+dans  la création  d'entreprise. Je  pense maintenant  faire parti  de
+cette catégorie, qui  en a eu marre  de subir. Mon désir  de créer une
+entreprise ou  de tester  le fonctionnement d'un  tel modèle  est issu
+globalement de cette problématique.
+
+== Changer
+
+On parle souvent  du changement. Le changement est  omniprésent. Si je
+devais paraphraser Bouddha: «Il n'y  a de constant que le changement».
+Changer est  pourtant très compliqué.  Extrèmement  compliqué. Essayez
+de ne perdre  ne serais-ce que quelques kilos ou  même d'apprendre une
+langue  étrangère seul.  Les entreprises  ont les  même problèmes.  La
+constante  fondamentale   dans  une  entreprise  dite   classique  est
+justement  sa capacité  à ne  pas  changer et  à être  moulé dans  une
+«culture d'entreprise».
+
+La grande  famille, comme on  a pu me  vendre de nombreuse  société en
+tant que  salarié.  Cette  grande famille  en provenance  direct d'une
+concertation   entre   plusieurs   hauts  cadres   de   la   structure
+dirigeante. Évidemment  qu'ils veulent  votre bien, c'est  presque une
+obligation légale! Mais  il ne faut pas exagérer, ce  n'est pas à sens
+unique, et vous aller devoir trimer un peu pls pour gagner votre place
+au sein de cette magnifique famille.
+
+La «culture d'entreprise» est la morale visible de l'entreprise, cette
+morale qui va  dicter dans les grandes lignes ce  que la structure qui
+vous dirige va pouvoir montrer au monde extérieur. Les belles paroles,
+ne sont d'ailleurs  valables que pour les  personnes externes, vendeur
+de  rêve.   Tellement  d'exemple  que   je  vais  en  donner  qui  m'a
+particulièrement choqué.  De nombreuses  sociétés aiment partager leur
+savoir et leur expérience en externe, mais voient d'un mauvais oeil la
+formation en interne.
+
+Un bout de viande intelligent ne devrait pas gagner en expérience, car
+il pourrait voir  ailleurs, fuir loin, pour des  paturages plus verts.
+Un bout de viande devrait être  exclusivement tiré vers le bas. Le don
+de formation,  même en interne,  ne pourra donc  se faire que  sur les
+heures de pauses  du salariés, car, le reste du  temps, il devra subir
+les réunions de infernales de branlette collective. Passer son temps à
+gérer des sujets inutiles... et non valorisant.
+
+Je  me  demande  ce qui  passe  par  la  tête  des dirigeants  de  ces
+sociétés. Un employé motivé qui a des compétences pourraient très bien
+revendre des formations  aux clients, faire de la  publicité direct ou
+indirect, trouver  de nouveaux marchés  voir devenir en  quelque sorte
+commercial  et se  gérer  lui  même. Un  modèle  trop  beau pour  être
+vrai... Ou trop récent et avant gardiste pour la France.
+
+Dans tous  les cas, toutes  les personnes salariés que  j'ai rencontré
+qui ont  essayé de  faire changer  les mentalités  en interne  se sont
+retrouvé fasse à un mur. Mon  idée de création d'entreprise a commencé
+à germer  ici, devant ce mur,  avec le constat suivant:  «Rien ne peux
+arrêter une société qui est bien lancé».
+
+Pour  être franc,  cette idée  de changement  ne date  pas depuis  mon
+entrée dans le monde du travail,  mais était déjà présente lors de mon
+entrée au lycée. Ma rencontre avec la «politique lycéenne» en tant que
+délégué m'avait fait devenir membre  du Conseil d'Administration et de
+la   Vie  Lycéenne.    Les  projets   proposés  se   sont  heurtés   à
+l'administration locale et aux guerres intestines des petits syndicats
+étudiants  médiocres  et  privateurs  de  libertés,  sujets  que  l'on
+retrouve dans  le monde de  l'entreprise.
+
+Le  contexte de  ma création  d'entreprise est  maintenant posé.   Une
+sensation d'impuissance  et d'incompréhension.  Un soupçon  de colère,
+ainsi qu'une  pointe d'amertume.  Certains  iront se réfugier  chez le
+Dieu  télévision,  d'autre  dans  la drogue,  l'alcool  ou  encore  la
+luxure. Au  final, les derniers  rescapés, intrépident et un  peu fou,
+iront se  frotter directement aux problèmes.  Ceux-là aiment souffrir,
+car ils vont en avoir à revenir, de la souffrance.
+
+C'est le moment d'enfiler ses gants  de boxe, de se remettre au sport,
+de préparer son baume du tigre, de prévenir le médecin, et de regarder
+tous les  Bruce Lee.  La  création d'une entreprise, c'est  une petite
+bataille dans un  monde en guerre. Vous  avez lu voyage au  bout de la
+nuit   de   Céline?  Non?   Vous   pouvez   maintenant  commencer   sa
+lecture. Bienvenue dans le monde de la création d'entreprise.
+
+== Démarrer
+
+D'un  naturel prudent,  et  ayant  déjà à  mon  actif  un quota  assez
+important  de souffrances  psychologiques  (il faut  bien trouver  une
+raison pour  être créateur d'entreprise  à notre époque), la  prise de
+risque fut  la dernière des  idées qui m'est  passé par la  tête. Vous
+pouvez  démarrer l'aventure  d'une  infinité de  façon,  mais dans  la
+majorité des  cas, vous commencerez  si vous avez assez  de ressources
+pour vivre en autarcie.
+
+Le nerf de la guerre étant l'argent, la première des choses à vérifier
+est  de savoir  combien de  temps vous  allez pouvoir  vivre avec  vos
+économies, l'argent de votre compagne (si  vous en avez une) ainsi que
+les  aides  éventuels  de  l'état.    Vous  êtes  en  train  de  faire
+l'inventaire complet de ce que vous  avez, de ce que vous dépensez. Si
+vous  avez  fait  vos  études  dans  un  autre  pays,  sans  avoir  la
+possibilité de  travailler, vous  serez alors nettement  avantagé. Les
+restrictions budgétaires  n'ont déjà  plus de  secret.  Si  vous venez
+d'une famille  relativement pauvre, vous  savez déjà ce que  c'est que
+d'avoir le frigo vide, vous partez aussi avantagé! «Le malheur des uns
+fais le bonheur des autres» comme on dit...
+
+Comment évaluer  combien de temps  vous allez pouvoir vivre?   Rien de
+plus   simple,   vous   allez    devoir   faire   votre   comptabilité
+personnelle. Récupérer  tous vos relevés  bancaires et faire  un bilan
+complet de vos dépenses/revenus sur  les dernières années. Chacune des
+dépenses devraient être rangé dans une catégorie ou sous catégorie. Le
+principe de  catégoriser va  vous permettre  de filtrer  le nécessaire
+vital du  surplus. À  la fin  de cette étape,  vous devriez  avoir une
+bonne idée de ce que vous dépensez.  Dans mon cas, ~1/4 de mes revenus
+allaient dans les impots direct et indirect (TVA inclue), ~1/4 dans le
+loyer, et le reste dans les dépenses courantes (nourritures & cie).
+
+Quels  sont  vos  besoins  pour vivre?   Pouvez-vous  vous  passer  de
+restaurant  pendant  les  prochains  mois? Allez  vous  survivre  sans
+télévision? Pouvez-vous limiter vos  dépenses alimentaires? Est-ce que
+votre compagne gagne suffisament en  cas de crise grave? Ces questions
+restent ouvertes et bien d'autres  peuvent se rajouter. Si vous n'avez
+pas de réponses à ces questions... Il va falloir creuser un peu plus.
+
+Tiens d'ailleurs, comment on crée  une entreprise?  Mince, c'est notre
+future activité et on ne sait  même pas comment ça fonctionne, et d'où
+ça vient?! Il  va donc falloir penser  à se former, et  à se rensigner
+sur   les  statuts,   la  comptabilité   et  le   juridique.   Prévoir
+potentiellement des dépenses supplémentaires  pour recevoir un minimum
+d'éducation dans ce domaine. N'oubliez pas que si vous devenez patron,
+vous  serez «libre»  d'être  responsable de  pratiquement tout.   Vous
+n'aurez de  compte à  rendre qu'à l'état,  et potentiellement  à votre
+banquier/bailleur si vous avez des problèmes financier.
+
+N'oubliez pas  que l'indépendance ne  veux pas dire liberté  totale et
+faire  tout  soit  même.    L'indépendance  c'est  être  dépendant  de
+ressources et de services que les salariés classiques n'utilisent pas:
+expert comptable, expert juridique, avocats en passant par services de
+communications et bien d'autre! Un  nouveau monde s'ouvre à vous, avec
+son lot de nouveaux  pièges. Plus il y a de paramètre, plus  il y a de
+risque d'erreur. Autant dire qu'avec tout ça en tête, on se demande si
+on fait bien  de se lancer. Ah  le doute... Il n'est pas  prêt de vous
+lacher!
+
+Et si on  remettait à plus tard la création  d'une société? N'y a-t-il
+pas un modèle plus sécurisant permettant  de valider si on ne fait pas
+d'erreur?  Permettre  de nous  faire  connaitre  en douceur,  tout  en
+apprennant à comprendre ce nouveau milieu? Effectivement, il y en a.
+
+La première  qui vient à  l'esprit de tout le  monde est le  modèle de
+l'auto-entrepreneur.   Ce statut  est  "relativement" récent  et a  la
+particularité  de  profiter d'une  simplification  à  l'extrème de  la
+gestion. J'ai été Auto-Entrepreneur pendant  ~3ans, dans le domaine de
+la maintenance informatique, petite anecdote,  je faisais partis de la
+CCM (Chambre des métiers) et non de la CCI (Chambres de commerce et de
+l'industrie), et  m'a donc  permis de travailler  sur mon  activité le
+soir et le week-end tout en gardant mon autre emploi.
+
+Ce  statut à  la  facheuse  tendance à  rendre  les choses  simples...
+Compliqué.   Tout  d'abord,  il   n'y  a  pas  d'obligation  comptable
+réelle. Il n'y a  pas de récupération de la TVA (ce  qui veut dire que
+vous devriez  être théoriquement plus cher  que l'entreprise classique
+si  vous faites  de la  vente). Accessoirement,  vous avez  un Chiffre
+d'Affaire limité, si vous le  dépassez, vous passez directement sur le
+statut de la  micro-entreprise avec tout ce qui va  avec.  Autant dire
+que vous avez  tout de même intérêt à tenir  une comptabilité, surtout
+si vos affaires fonctionnenet bien!
+
+L'AE est un statut fourbe et obscurcit ce qui pourrait être simple. Je
+ne  peux le  recommander sauf  si vous  avez une  passion et  que vous
+voudriez en  vivre le soir et  le week-end. Un exemple:  votre passion
+c'est de faire de la dentelle. Votre grand-mère et toutes ses amies en
+sont folles, de  vos dentelles! Vous décidez donc de  mettre du beurre
+dans les épinards en revendant vos  créations à mémé Gertrude, le tout
+légalement et de manière sporadique.
+
+D'autres alternatives existent, le portage salarial en fait partit. On
+pourrait  découper  cette  alternative   en  2:  le  portage  salarial
+classique et les coopérative d'activité et d'emploi (CAE).
+
+Le  portage  salarial  permet  de vous  donner  une  certaine  liberté
+d'action (activité que vous voulez, clients libres...) tout en gardant
+un statut de salarié et les  protections sociales qui en découlent. Le
+principe du portage  salarial est simple, une structure  N partage son
+SIRET  avec les  salariés de  la structure.  La structure  N offre  la
+comptabilité et  différents services en échange  d'une contribution de
+la part du salarié (~10% du chiffre d'affaire).
+
+La  Coopérative  d'Activité  et  d'Emploi est  une  forme  de  portage
+salarial basé sur  un modèle coopératif, et  partageant les fondements
+de ce mouvement:  démocratie interne, partage des  ressources et tutti
+quanti.   Lors de  l'entrée  dans cette  structure,  un CAPE  (Contrat
+d'Appui au  Projet d'Entreprise), qui  vous permettra de  continuer de
+recevoir  les allocations  chomages,  tout en  travaillant pour  votre
+future structure. Les bénéfices récoltés sont alors mis de côté durant
+la période de votre CAPE.  La  somme mise de coté durant cette période
+deviendra alors  votre salaire lors de  la fin de vos  aides et autres
+allocations.
+
+== Forger
+
+Maintenant  que  vous  savez  comment   on  peut  tester  la  création
+d'entreprise... Peut-être est-il  temps de savoir ce  qu'on va vendre,
+et ce qui va nous faire vivre pendant les prochains mois ou prochaines
+années?
+
+L'idée  de départ  n'est pas  de créer  une entreprise,  ça, c'est  la
+conséquence de  votre idée. Dans  mon cas,  l'idée est de  partager la
+connaissance devenir formateur ou offrir des services à des structures
+plus ou  moins grosses.   Avoir une idée,  tout le monde  en a,  et ça
+rapporte pas  grand chose. Vous  pouvez toujours essayer de  la vendre
+comme concept, mais si l'idée ou le concept n'a pas été testé, ne vous
+attendez pas à faire réussite.
+
+Une idée, c'est comme  du minerai de faire pour un  forgeron, ou de la
+farine pour  un bonlanger.  Avant  de devenir un couteau,  le forgeron
+travail  une matière  brut qui  ne ressemble  pas à  grand chose.   On
+pourrait  d'ailleurs  difficilement  croire  que de  la  poudre  noire
+pourrait devenir un jour un couteau.  Qui pourrait croire qu'un sac de
+farine pourrait  devenir un gateau  ou du pain? Votre  idée fonctionne
+sur le même  principe, elle est brut, vous l'avez,  mais vous ne savez
+pas quoi encore en faire.
+
+Une bonne idée, fraiche, tendre et nouvelle, on peut en faire ce qu'on
+veut.   C'est  d'ailleurs  tout  le problème  avec  les  idées,  elles
+apparaissent,  disparaissent, se  transforment et  évoluent. Si  on ne
+prend pas le temps de l'écrire ou de la partager, elle s'évade. Écrire
+son  idée   est  alors  fondamental.   L'écrire  permet  déjà   de  la
+matérialiser, d'y penser, d'y réfléchir.
+
+Un entrepreneur n'est pas un sprinter, un entrepreneur fait au pire un
+marathon,  au mieux  un  tour  du monde.   Son  idée  doit être  assez
+cohérente et avancé  pour pouvoir tenir 5ans, 10ans,  15ans ou jusqu'à
+la fin de ses jours. Son idée  de base devra peut-être même évoluer au
+court  de son  existence,  entrainant avec  elle  l'entreprise et  les
+personnes qui sont dedans.
+
+Maintenant que notre idée est  partiellement réalisé, du moins, sur un
+bout de papier, un nombre important  de questions doit être posé. Vous
+devez mettre en  condition réel ce nouveau concept. Si  votre idée est
+un outil  informatique, il  est facile  de produire  un PoC  (Proof of
+Concept), vous  permettant de  savoir si,  même avec  un bout  de code
+écrit en 1 semaine, votre idée  est viable. Si votre futur produit est
+d'ailleurs basé sur  cette idée, avoir un prototype  permet de trouver
+plus facilement des investisseurs et donc de se lancer rapidement dans
+la course.
+
+Mais peut-être qu'avant  cette étape, il est nécessaire  de passer par
+quelque  chose de  plus  long  et de  plus  compliqué.  Travailler  et
+torturer son idée  jusqu'à ses limites. Un entrepreneur  doit se poser
+des questions, et doit pouvoir avoir un retour chiffrer. 
+
+ * Est-ce que quelqu'un à déjà eu cette idée?
+ * Est-ce que des produits similaires existent?
+ * Est-ce que d'autres ont essayés? si oui ont-ils réussis?
+ * Est-ce que l'idée me plait toujours?
+ * Est-ce que mon idée est réalisable?
+ * Pourquoi réaliser cette idée?
+ * Comment réaliser cette idée?
+ * Quel est le cout de mise en place minimum?
+ * Qui pourrait être intéressé par cette idée?
+
+Évidemment,  de nombreuses  autres questions  vont venir  au fur  et à
+mesure, il faudra essayer d'y répondre. La meilleure façon d'avoir ces
+questions est  de les  poser aux  personnes de  votre entourage  et de
+récupérer  des critiques  ou  des remarques,  les  noter pour  pouvoir
+travailler dessus. Une  partie de votre ego devra être  mis de côté et
+vous allez devoir  accepter la critique, qu'elle  soit constructive ou
+non. 
+
+Cette étape  va permettre de  formaliser l'idée, de la  concrétiser et
+d'avoir une idée des personnes  qui pourraient déjà être intéressé par
+un tel concept. Il faut savoir que  petit bout de papier où votre idée
+est  écrit est  une boite  à  malice. Il  peut se  transformer en  nom
+d'entreprise, trouver des partenaires  ou des associés, créer d'autres
+projets,  trouver  des  concurrents,  créer  de  la  réussite  ou  des
+ennuis. Le temps que vous allez passer dessus à creuser déterminera ce
+qui se passera.
+
+Dans mon cas,  je n'avais pas qu'une idée en  tête... Et j'ai toujours
+eu la facheuse tendance à penser sur  le long terme. Tant que mon idée
+n'est pas un minimum finalisé, elle  ne me lache plus.  Vraiment plus.
+Mon premier  vrai projet était  la création d'un café  philo (kawaphi)
+dans mon ancien lycée,  il y a de ça plusieurs  année.  Ne voulant pas
+avoir un cadre  administratif complexe, nous nous  étions associé sous
+forme  d'une   association  de   fait.   C'était  un   premier  projet
+intéressant, qui permettait  de remettre en avant  la philosophie sous
+sa forme original: la réflexion, le partage et la transmission.
+
+Ma seconde idée  est venue des constats précédemment  listé durant mes
+différentes expériences  professionnelle. Le  nivellement vers  le bas
+est une  plaie qu'il faut  éradiquer. Si  les sociétés ne  peuvent pas
+aider les  salariés à  aller de  l'avant, c'est  au salarié  d'agir de
+lui-même.   Comment  agir  sur  le salarié  ou  ses  compétences?   En
+partageant le savoir et l'expérience acquise par d'autre personnes. Où
+trouver  cette  matière  première?   Dans la  littéture  technique  et
+scientique  issue de  la recherche  publique ou  privée. L'idée  d'une
+bibliothèque indépendante  et technique  était né. Ça  fait maintenant
+6ans que je travaille  sur la réalisation de cette idéé.  Il y a 2ans,
+une association est né de cette réflexion: Semitam. 
+
+Malheureusement, le  salarié n'est  pas forcement  tenu au  courant de
+l'existance   d'une   telle    structure,   lui   permettant   d'avoir
+potentiellement  des  formations  à  bas coût  lui  permettant  de  se
+remettre  à niveau  ou d'apprendre  de nouvelles  techniques.  Comment
+faire   pour  faire   connaitre  une   telle  structure?    Réseauter,
+communiquer  et avoir  de l'expérience.   Comment y  arriver?  Devenir
+indépendant et  travailler directement  avec les entreprises  et leurs
+salariés. Voilà un des déclencheurs de mon indépendance.
+
+Cette pensée  m'a donnée  l'envie de  devenir patron  à mon  tour pour
+connaitre leurs problèmes ainsi que leurs besoins. Comprendre pourquoi
+la formation  des salariés est aussi  compliqué et non désiré  par les
+personnes  dirigeant la  structure.  Accessoirement,  pour essayer  de
+comprendre ce fossé qu'il y a entre le patronat et le salariat.
+
+Mon premier  service rendu était du  bénévolat, dans le domaine  de la
+sécurité informatique pour  un site qui venait de se  faire piraté. Le
+client en  question, une  association, avait  de nombreux  problème de
+sécurité.  Heureuse  coïncidence, le  jour où  s'est produit  tout ces
+problèmes,   j'avais  rendez-vous   avec  le   directeur,  qui   était
+littéralement sous l'eau.  Après un petit aperçu du site,  et réglé le
+problème... Ce premier client m'en a ramené un autre.
+
+Ces expériences  m'ont permis de me  rendre compte que je  ne suis pas
+fais pour être consultant, du moins, seul. La gestion des contrats, la
+gestion des tarifs,  ne sont vraiment pas mon  fort. D'ailleurs, toute
+la  partie  commerciale est  réellement  problématique  pour moi.   Le
+deuxième client, une TPE, n'avait clairement pas la carrure pour payer
+une  intervention dans  le domaine  de la  sécurité pour  de l'analyse
+d'attaque post-mortem.
+
+Quelques mois après cette expérience, j'étais prêt à retourner dans le
+monde du  travail, avec pleins  d'interrogations en tête, mais  un peu
+déçu des choix que j'avais fais. Début septembre, j'ai décidé de miser
+le tout pour le tout et  d'aller jusqu'à mes limites. J'ai donc changé
+complètement  de modèle,  en passant  du service  à la  formation tout
+niveau (débutant, avancé et expert) dans le domaine de l'informatique.
+
+En l'espace de 3mois  à raison de 70h à 80h par  semaine, j'ai donc pu
+créer des  supports de formation  de bonne qualité, avec  des machines
+virtuelles dédiés  ainsi que tout un  panel d'exercices et de  mise en
+pratique pour  apprendre à tout  le monde  de se service  des systèmes
+Unix. Évidemment,  j'ai organisé aussi  90% de la communication  de la
+structure, validé le contenu des machines virtuelles et du code en les
+testant au fur et à mesure, ainsi  que valider le contenu via toute la
+littérature technique en ma possession.
+
+Pour  tester réellement  l'efficacité  des slides  et  la qualité  des
+formations, j'ai  réussi à négocier  avec une association  pour donner
+des  cours du  soirs aux  personnes potentiellement  intéressé par  le
+contenu sous  forme de Meetup. La  finalité était la préparation  à la
+certification BSDA. Conclusion de cette expérience: ~10 personnes tous
+les  jeudi  soir,  plus  de  280 slides  soit  environ  150  pages  de
+formations,  6 machine  virtuelles  sous FreeBSD,  OpenBSD, NetBSD  et
+DragonFlyBSD.
+
+Évidemment,  en  rester  là,  n'était  pas mon  but.   De  donner  des
+formations m'a donné l'opportunité de  voir ce qui manquait réellement
+dans  ce domaine.   Cette expérience  m'a permis  de travailler  sur 2
+autres projets de formations: Erlang et JavaScript, tout en continuant
+sur les formations BSD.
+
+== Échouer
+
+Malheureusement, tout  ce qui a un  début, à aussi une  fin. Atteindre
+ses limites n'est pas forcement la meilleure des choses. Fin décembre,
+problème de santé: carence en vitamine  b12, gros coups de blues. J'ai
+atteind mes  limites. Je décide  de finir  les formations, et  je suis
+nominé en tant qu'adhérent de l'année au CCRE35. L'année 2017 a plutôt
+bien commencé d'un point de vue  professionnel, mais pas d'un point de
+vue santé! 
+
+De plus, l'associé que j'avais trouvé  décide de quitter le navire. Je
+me retrouve  seul à  faire le  commercial (chose  que je  déteste), me
+m'attele  tout  de  même  à  la   tâche  et  je  refais  tout  le  mon
+modèle. Mi-janvier, j'ai déjà quelques proposition pour des formations
+et d'autres rendez-vous en approche.  Mon catalogue est prêt et plutôt
+fournit, mais... Il me manque de  la notoriété. Personne ne connait ma
+structure. Plusieurs  rendez-vous sont annulés ou  reportés. J'attends
+toujours les  réponses de  plusieurs sociétés.
+
+De plus, un autre problème, et de taille, fait surface. La finalité de
+mon  projet  est de  proposer  des  formations sur  les  architectures
+complexes, et essayer de rationnaliser  tout ce chantier pour proposer
+des méthodologies de travaille réaliste. Ma structure n'a actuellement
+pas  du tout  la  carrure  pour gérer  5000  équipements  et faire  de
+l'automatisation sur  autant de machines.   Au mieux, je  peux espérer
+avoir une 100ène de machine virtuelle. Ça sent la fin de l'aventure!
+
+L'échec est  omniprésent, voir  fondamental. La plupart  des personnes
+préfèrent le cacher,  comme un dossier honteux  qu'il faut s'empresser
+de  cacher. Ne  connaissant  que la  France, où  on  est pourtant  les
+champions  de l'échec  depuis  au  moins 50ans  (citez  moi une  seule
+réussite française  de ces  50 dernières années?   La vente  de brevet
+n'étant pas inclus dedans), il s'avère  que tout le monde ne parle que
+de réussite. Un peu comme si on partageait avec le Japon, cette petite
+part d'honneur. Serions nous prêt à tout pour le garder?
+
+L'échec est pourtant constructif et  formateur. Contrairement à ce que
+penses de nombreuses personnes échouer  nous permet d'apprendre de nos
+erreurs de nous  faire évoluer.  L'échec c'est apprendre  et miser sur
+l'expérience du terrain. Ne jamais  oublier que le cerveau assimile en
+agissant sur  son environnement.  Si on  bloque cette  interaction, on
+bloque l'assimilation et nous apprendrons moins bien.
+
+NOTE:  trouver  l'expérience  cognitive  des chatons  dans  2  paniers
+distinct.
+
+L'échec permet  de faire  des découvertes. Tout  d'abord on  apprend à
+devenir humble. Au  bout de quelques échecs on se  dit que le problème
+ne vient  pas de l'autre, mais  peut-être bien de nous.   Il permet de
+casser  cet ego  qui devient  un peu  trop présent  dans le  monde des
+startups, au point où ça en deviendrait presque risible.
+
+Finalement,  l'échec permet  de mettre  en avant  nos réussites  et de
+donner du goût à nos futurs succès. Mourir sans cicatrice, c'est comme
+avoir passé sa sans l'avoir vraiment vécu.
+
+== Synthétiser
+
+En l'espace d'un an j'ai appris tellement de choses, vue tellement de
+technologie et de domaines différents que je ne saurais pas par où
+commencer.
+
+Il y a quelques  années, je ne savais coder qu'en  Perl et Python (pas
+forcement  très  proprement).   En  l'espace  d'un  an,  je  développe
+couremment en  Perl, Haskell, Erlang,  Elixir et Clojure.   J'arrive à
+apprendre un langage en moins d'une  semaine (Go, Ocaml).
+
+J'ai fais un réel bilan de mes compétences par la pratique en prouvant
+que je peux faire des supports de formations complets et intelligibles
+par pratiqeument tout  le monde sur FreeBSD,  OpenBSD, DragonFlyBSD et
+NetBSD.
+
+Durant la  période de formation,  j'ai trouvé  le temps pour  créer un
+logiciel de  gestion de  log from scratch  (en cours  de construction)
+nommé  Erebor,  avec  les  spécifications  techniques  complètes,  les
+évolutions  futures,  et les  prérequis  pour  les prochains  mois  de
+développement, le tout en Erlang.
+
+Un projet de framework de test  pour le réseau, basé actuellement sous
+FreeBSD,  et utilisant  à outrance  la fonctionnalité  des jails  pour
+pouvoir modéliser un réseau virtuel  et faire des simulations de tests
+réseaux grandeurs natures. Thème abordé durant les formations.
+
+Un nombre incroyable d'autres projets  sont en train d'être relaché au
+fur  et à  mesure  que je  trouve  le temps  pour  valider, tester  et
+réaliser l'empleur du travail fournit pendant plus d'un an.
+
+J'ai  aussi trouvé  un peu  de temps  pour moi,  j'ai suivis  quelques
+formations  en  sécurité  informatique  via l'INRIA,  et  je  me  suis
+réintéressé  au reversing  et à  la  cryptographie. Que  c'est bon  de
+pouvoir  réaliser des  algorithmes  fonctionnels et  de pouvoir  enfin
+jouer les cryptanalystes amateurs! De nouvelles passions sont nés, sur
+la complexité des systèmes et la simplification des modèles.
+
+Je me  suis remis aussi  aux mathématiques, plus  particulièrement les
+mathématiques védiques. J'ai eu le  temps d'apprendre un peu  plus en
+profondeur les  concepts de  la médecine traditionnelle  chinoises, la
+culture des  plantes et l'utilisation  de ces dernières d'un  point de
+médicinal  et industrielle  ce qui  a donné  naissance à  une nouvelle
+association que  nous avons monté avec  ma compagne: La Tête  dans les
+Orties.
+
+J'ai  rencontré  un  nombre  incalculable de  personnes,  toutes  plus
+fantastiques les  unes que les  autres. N'ayez  pas peur d'aller  à la
+rencontre des autres  et de partager ce  que vous savez (ou  ce que ne
+vous savez pas encore)!
+
+== Conclure
+
+Ce texte  est long  et n'avait  à l'origine  pas pour  vocation d'être
+publié, mais je  me suis dis qu'il manquait d'exemple  d'échec dans le
+domaine de la création d'entreprise sur le web. Il faut que ça change,
+il faut arrêter de créer des taboux sur des sujets aussi important que
+l'échec.
+
+Si  tout le  monde pouvait  partager ses  échecs, ça  ferait peut-être
+gagner  du temps  à  de  nombreux créateur  de  projets et  motiverait
+peut-être bien d'autres à agir. N'ayons plus peur de l'échec.
+
+Pour faire simple: je ne regrette  pas cette année. Si j'ai l'occasion
+de le refaire? Oh que oui que je recommencerais! :)
+
+== FAQ
+
+Après  ce  long  texte  (#3615mylife), je  pense  qu'une  partie  plus
+concrete basé  sur des questions/réponses  sera plus adapté à  tout le
+monde. Voici les questions que j'ai  pu déjà me poser, et les réponses
+associées.
+
+=== Comment trouver une idée?
+
+Roh! Regardez autour de  vous! Il y a bien une  chose qui vous énerve,
+quelque  chose que  vous voudriez  changer, améliorer  ou complètement
+détruire? Voilà. Vous venez d'avoir votre première idée.
+
+Tout le monde  pense qu'être créatif ou "innovant"  c'est réservé qu'à
+quelques élites provenant d'une classe supérieur de sur-humaine. C'est
+faux.  Rendre simple  une  tache  complexe est  la  porté  de tout  le
+monde. Il suffit  simplement de prendre le temps pour  y réfléchir, un
+peu.
+
+=== Quel portage salarial?
+
+Je n'ai  malheureusement pas  eu l'occasion de  tester une  société de
+portage salarial durant mon année  de test. Par ailleurs, j'ai entendu
+de très bon echo venant de certaines d'entre elles:
+
+ * le monde après
+
+=== Quel CAE sur Rennes et sa région?
+
+J'ai  été pendant  1an  chez Élan  Créateur.  Cette structure  n'était
+clairement  pas adapté  à  mes besoins.  L'informatique nécessite  des
+ressources   relativement   importante   et  possède   de   nombreuses
+particularités, surtout  dans mon domaine  (sécurité). Je ne  peux pas
+conseiller  une  CAE  pour  les  personnes  ayant  des  domaines  très
+particulier et pointus.
+
+Par ailleurs,  si vous  êtes sur  un projet  simple, ne  demandant pas
+réellement d'investissement (autre que temporel) et que vous voulez le
+tester sans risque, Élan Créateur saura répondre à votre problème.
+
+ * Élan Créateur
+
+=== Comment réseauter?
+
+La meilleure façon de réseauter c'est de sortir de chez soi et d'aller
+à la  découverte du monde  qui vous  entoure.  La région  Bretagne est
+pleine  d'évènement  pour  la  création d'entreprise,  l'un  des  plus
+important étant la  JRCE, un endroit que je conseil  réellement à tout
+les  nouveaux créateurs.  Préparez une  liste de  questions, et  aller
+affronter les stands!
+
+Si vous  avez un  projet d'entreprise en  cours de  réalisation, c'est
+aussi  le  moment d'aller  l'éprouver  et  de recevoir  des  critiques
+dessus.
+
+Vous  pouvez  aussi  allez  aux   rencontres  qui  se  font  dans  les
+coworkings,  les réunions  d'informations  donné par  les sociétés  de
+portages ou les CAE... N'hésitez pas!
+
+=== Comment trouver un réseau dans mon domaine?
+
+Vous êtes dans l'informatique, comme  moi, la région Bretagne est très
+active dans ce domaine, sur le bassin rennais vous pourrez trouver ces
+structures que pourrons vous aider ou vous conseiller
+
+ * French Tech
+ * BDI (MEITO)
+ * Actux
+ * Grifon
+
+Pour les autres domaines, il y a la CCM et la CCI qui donnent accès à
+un nombre important de contact. Certaines réunions et conférences sont
+d'ailleurs très intéressantes.
+
+=== Comment lutter contre l'isolement?
+
+De nombreux créateurs  d'entreprises sont victimes de  la solitude, et
+finissent pas  abandonner à  cause de  cette problématique.  J'ai fais
+parti  de 2  associations géniales,  qui m'ont  aidé quand  j'en avais
+besoin et qui m'ont apporté toujours de très bon conseils:
+
+ * CCRE35
+ * AIEB
+
+=== Comment trouver un local?
+
+On  a tous  besoin d'un  local ou  d'un bureau  pour travailler.   Sur
+Rennes,  pas évident  d'en  trouver  un! Il  y  a  d'ailleurs un  réel
+problème d'hébergement  pour les  indépendants dans cette  ville alors
+qu'il y a un nombre pas croyable de locaux professionnels à louer ou à
+vendre. Vous pouvez toujours vous  tourner vers le coworking, mais les
+places sont  chères et il  n'y en a pas  beaucoup! Un collectif  a été
+récemment créé pour pouvoir regrouper  une bonne partie des acteurs du
+coworking rennais:
+
+ * http://www.rennes-coworking.com/
+
+=== Comment trouver un expert comptable?
+
+Il n'y  a pas des millions  de méthodes. Tout d'abord,  ne prennez pas
+pour argent comptant ce que vous dit votre meilleur ami. Recherchez la
+liste de tous les expert comptables prêt de chez vous et demandez leur
+un rendez-vous de présentation pour votre projet.
+
+La consultation  est normalement  gratuite, car ils  ont un  devoir de
+conseil. Préparez la liste de  vos questions, vous n'avez qu'une heure
+ou deux pour présenter votre projet dans les grandes lignes et pouvoir
+avoir des réponses à votre questions.
+
+N'oubliez pas que votre comptable  va probablement devenir la personne
+avec qui  vous allez  avoir souvent  devant vous...  Si le  courant ne
+passe pas, il est préférable de changer avant qu'il ne soit trop tard!
+
+=== Comment trouver un expert juridique ou avocat?
+
+Tout  comme  l'expert  comptable.   Réservez-vous  quelques  jours  ou
+semaines  pour  aller  rencontrer   plusieurs  avocats  ou  expert  en
+commerce. Habituellement,  il est préférable  de passer par  un avocat
+et/ou notaire si vous êtes avec un partenaire/associé. N'ayez pas peur
+de tout écrire, à vrai dire: pensez réellement à tout écrire!
+
+=== Comment se former?
+
+Avant  de franchir  le pas,  j'ai lu  beaucoup de  littérature sur  le
+sujet,  évident, dans  la majorité  des  livres, ce  sont des  success
+stories, le  début est  compliqué, mais tout  va mieux  ensuite. Happy
+end. Malgré tout,  c'est intéressant de voir les  épreuves endurés par
+d'autres. «L'intelligent apprend  de ses erreurs. Le  sage apprend des
+erreurs des autres».
+
+Sur les retours d'expériences:
+
+ * https://www.amazon.fr/Cr-er-son-entreprise-Patrick-Jolly/dp/2212545940/[Créer
+   son entreprise], Patrick Jolly
+ 
+ * https://www.amazon.fr/Consultant-métier-ouf-Benjamin-Chaminade/dp/2840016753/[Consultant,
+   un métier de ouf], benjamin chaminade
+ 
+ * https://www.amazon.fr/petit-livre-rouge-création-dentreprise/dp/2212561482[Le
+   petit livre rouge de la création d'entreprise], Guilhem Bertholet
+ 
+ * https://www.amazon.fr/REWORK-REUSSIR-AUTREMENT-Jason-Fried/dp/284001713X/[Rework,
+   réussir autrement], Jason Fried et David Heinemeier hansson
+ 
+ * https://www.amazon.fr/Lentreprise-du-bonheur-Tony-Hsieh/dp/2848994878/[L'entreprise
+   du bonheur], Tony Hsieh
+ 
+ * https://www.amazon.fr/Remote-Required-David-Heinemeier-Hansson/dp/0091954673/[Remote,
+   office not required], David Heinemeier Hansson et Jason Fried
+ 
+ * https://www.amazon.fr/retraite-précis-création-dentreprise-salarié/dp/2841865746[Ma
+   retraite à 29ans], Nicolas Trub
+ 
+ * https://www.amazon.fr/Devenir-formateur-ind%C3%A9pendant-formation-professionnelle/dp/B016LT1MRI/[Devenir
+   formateur indépendant], Georges Vigreux
+
+ * https://www.amazon.fr/Lean-Startup-Adoptez-linnovation-continue/dp/2744066400/[Lean
+   Startup: Adoptez l'innovation continue], Eric Ries et Michael Ballé
+
+Sur les conseils:
+
+ * https://www.amazon.fr/Cr%C3%A9er-son-entreprise-Carine-Sfez/dp/2809510806/[Créer
+   son entreprise], Carine Sfez et Joël Saingré
+ 
+ * https://www.amazon.fr/Cr%C3%A9ation-dentreprise-2013-installation-d%C3%A9veloppement/dp/2247107001/[Création
+   d'entreprise], Anne-Laure Stérin
+ 
+ * https://www.amazon.fr/Entreprise-individuelle-2013-2014-auto-entrepreneur-%C3%A9volution/dp/224710116X/[Entreprise
+   Individuelle EURL EIRL], Véronique Legrand et Jean de Faultrier
+ 
+ * https://www.amazon.fr/Consultant-dentreprises-2013-juridique-professionnelles/dp/2247120741/[Consultant
+   d'entreprise], Thierry Lupiac
+ 
+Sur le domaine juridique:
+
+ * https://www.amazon.fr/Coop%C3%A9ratives-organisation-fonctionnement-David-Hiez/dp/2247120172[Coopératives],
+   David Hiez
+ 
+ * https://www.amazon.fr/SAS-Soci%C3%A9t%C3%A9-actions-simplifi%C3%A9e-1C%C3%A9d%C3%A9rom/dp/2247076300/[SAS,
+   Société par action simplifié], Nicolas Simon de Kergunic et
+   Frédéric Masquelier
+ 
+ * https://www.amazon.fr/Soci%C3%A9t%C3%A9-responsabilit%C3%A9-limit%C3%A9e-SARL-%C3%A9volution/dp/2247101313/[SARL,
+   Société à responsabilité limité], Xavier Delpech
+
+Sur le domaine commercial:
+
+ * https://www.amazon.fr/Contrat-commercial-Savoir-n%C3%A9gocier-r%C3%A9diger/dp/2842000498/[Le contrat commercial], Thierry Lupiac
+
+De nombreux MOOCs existent aussi sur la toile, je n'ai malheureusement
+pas eu le temps des les suivre en entier.
+
+ * https://www.futurelearn.com/courses/starting-a-business[Starting  a
+   business: realise your vision * https://www.futurelearn.com/courses/innovation-and-enterprise[Innovation
+   and Enterprise]
+ * https://www.futurelearn.com/courses/money-in-business[The
+   Importance of Money in Business]
+
+ * https://www.coursera.org/learn/innovative-ideas[Developing
+   Innovative Ideas for New Companies]
+ * https://www.coursera.org/learn/startup-idea[How to validate your
+   Startup Idea]
+ * https://www.coursera.org/learn/startup-technologique[Créer et
+   développer une startup technologique]
+ * https://www.coursera.org/learn/design-thinking-entrepreneurship[Innovation
+   and Entrepreneurship - From design thinking to funding]
+ * https://www.coursera.org/learn/financial-accounting[Accounting:
+   Principles of Financial Accounting]
+
+ * https://www.khanacademy.org/economics-finance-domain/entrepreneurship2[Entrepreneurship]
+ * https://www.khanacademy.org/economics-finance-domain/entrepreneurship2/interviews-entrepreneurs[Interviews
+   with entrepreneurs]
+ 
+Certaines  personnalités  m'ont  vraiment plus,  elles  sont  rarement
+françaises mais  donnent de  très bon conseils.  Guy Kawasaki  en fait
+partis et je  regrette de ne pas avoir connu  ce personnage bien avant
+de me lancer.
+
+ * https://www.youtube.com/watch?v=HHjgK6p4nrw[Guy  Kawasaki: The  Top
+   10 Mistakes of Entrepreneurs]
+
+=== Comment tenir sa comptabilité?
+
+Avant  de  vous lancer  dans  l'aventure,  commencez par  faire  votre
+comptabilité vous même avec les  dépenses sur votre salaire. Commencez
+avec un tableur  (excel, open/libre office cacl) et mettez  à la suite
+vos revenus et vos dépenses. Chaques dépenses pourra être alors classé
+par catégories. Voilà.  Vous venez de faire en très  gros ce que votre
+expert comptable fera.
+
+Après  avoir travailler  avec  un tableur,  vous  pouvez utiliser  des
+logiciels spécialisés.  Dans le libre,  vous avez à  votre disposition
+GnuCash. Il  permet déjà  de faire  beaucoup de  choses et  d'avoir un
+progiciel dédié à la comptabilité.
+
+Si vous avez optez pour une société de portage ou une CAE, il y a fort
+à parier que  vous aureza un logiciel fournit par  cette même société,
+vous permettant d'avoir une vue  simplifié de votre comptabilité et de
+la tenir à jour.
+
+Maintenant, dans le  cadre d'une société, de nombreuses  règles sont à
+appliquer  pour tenir  une  comptabilité sans  faille. Évidemment,  si
+votre  société  grossis,  investir  dans une  société  garante  de  la
+comptabilité ou recruter un comptable sera  un plus, mais si vous êtes
+intéressé par le domaine, voici 2 livres qui m'ont bien aidé:
+
+ * Comptabilité Générale, B & F Grandguillot
+ * Comptabilité des sociétés, B & F Grandguillot
+
+=== Comment arrêter son activité?
+
+On parle  souvent de commencement,  mais très peu  de la fin.  Il faut
+savoir  que si  vous êtes  dans une  société de  portage, vous  pouvez
+mettre fin  à votre  contrat de  travail quand  vous le  désirez. Vous
+pourrez donc  reprendre vos  droits de  chomage (si  vous en  avez) ou
+retrouver un travail.
+
+Si vous  avez été patron,  ça se complique un  peu plus, mais  si vous
+n'êtes  pas à  l'aise  ou pas  prêt,  ne forcez  pas.  Il est  parfois
+préférable  de  remettre un  projet  à  plus  tard dans  de  meilleurs
+conditions.
+
+=== Comment faire son Business Plan?
+
+Le business plan... Tout le monde  en parle mais trop peu de personnes
+savent en  faire un,  moi le premier.  Premièrement, le  business plan
+évolue  et vous  pouvez  en avoir  plusieurs. J'aime  particulièrement
+celui présenté  dans le modèle de  Lean Startup. Un Business  Plan qui
+évolue   en  fonction   des  retours   clients  et   des  besoins   de
+l'entreprises.
+
+=== Comment faire sa communication?
+
+La communication est probablement la part  qui bouffe le plus de temps
+dans  la vie  d'une entreprise,  surtout  quand on  débute. À  l'heure
+d'aujourd'hui, nous  aussi tout ce  qu'il faut  pour ne plus  avoir le
+temps de  faire autre chose.  Les réseaux  sociaux sont un  exemple de
+rapport temps/profit pas toujours bien estimé.
+
+Si vous  voulez faire votre  communication, vos premières  cibles sont
+les personnes  que vous connaissez.  Ne cherchez pas des  inconnus sur
+twitter, facebook, linkedin  ou google+. Parlez de votre  projet à vos
+proches, à vos amis et aux personnes dans vos réseaux professionnels.
+
+Vous  voulez tout  de  même  faire de  la  publicité  sur les  réseaux
+sociaux? Alors commencez  petit, trouvez celui qui vous  plait le plus
+et gardez le. N'oubliez pas que  de nombreux logiciels existent sur le
+marché  pour pouvoir  automatiser  l'envois de  message sur  plusieurs
+réseaux sociaux en simultanés
+
+=== Comment organiser mon temps?
+
+Une question  qui est revenu assez  fréquemment... Malheureusement, il
+n'y a pas de réponse universelle. Selon votre activité et vos clients,
+il est possible que la gestion du temps soit fluctuente.
+
+Le  combo kanban  + pomodoro  marche plutot  bien dans  le cadre  d'un
+projet avec  un cahier  des charges définis.  Ce modèle  permet d'être
+réellement  productif,  mais  sur   une  courte  période  (1semaine  à
+3mois). À priviligier pour les périodes de rush ou quand un projet est
+un peu trop à la bourre.
+
+Pour la gestion de  l'entreprise (administrativement parlant), il faut
+bien  compter  facilement  50%  de  son temps.  Se  rajoute  à  ça  le
+démarchage client, la communication et le côté commercial.
+
+=== Comment gérer ses projets?
+
+Oubliez le  cycle en V  et les diagrammes  de Gantt. Ces  2 techniques
+vont vous faire perdre du temps et  vous faire croire à des choses qui
+n'existent pas. Définissez votre projet avec votre client. Si c'est un
+projet  que  vous  créez  vous  même, divisez  le  en  un  maximum  de
+sous-tâche indépendantes et réalisez les au fur et à mesure.
+
+Quand vous aurez réalisé un prototype fonctionnel, et calculé le temps
+qu'il vous  a fallu, vous pourrez  alors faire des estimations  sur le
+temps de développement restant.  Évidemment, ces conseils s'appliquent
+dans le  cadre de  l'informatique, mais je  pense qu'ils  peuvent être
+appliqué à n'importe quel autre modèle.
+
+=== Quel est mon marché?
+
+Quand  j'ai  commencé,  je  voulais  attaquer  les  grandes  sociétés,
+malheureusement, ces  structures acceptent rarement des  nouveaux dans
+le domaine de l'informatique. Pour avoir accès à ces sociétés, il faut
+passer  la  plupart du  temps  par  une  SSII  qui va  revendre  votre
+prestation au client final.
+
+Pour aller encore plus loin, certaines grandes sociétés jouent sur les
+tarifs en ayant  2 SSII priviligiés: une importante et  une petite. La
+petite structure  faisant des  tarifs plus bas,  elle permet  de faire
+chuter le prix  de la plus grosse. Si vous  voulez attaquer les grands
+comptes, il vous faudra trouver par quelle SSII elles passent.
+
+La deuxième étape  est de valider les critères. Si  vous êtes dans une
+société de portage,  vérifiez votre assurance, et le  montant de cette
+dernière.  Le  montant  est  important, surtout  dans  le  domaine  de
+l'informatique,  où  une simple  erreur  peu  causer des  millions  de
+pertes. Si votre  assurance est limite, oubliez les  grands projets et
+allez voir du côté des PME/PMI.
+
+En  changeant  de   marché,  vous  devrez  aussi   changer  de  modèle
+économique. Fini les grands projets de 6 à 12mois sur des technologies
+de pointes. Les besoins des  PME/PMI est complètement différents, mais
+par change, vous faites toujours du B2B (business to business, vous ne
+parlez pas à un particulier mais  à une société). Vos prix risquent de
+devoir s'aligner aussi, car les  petites structures n'ont pas les même
+budget que les grosses. Si vous  gardez les même tarifs, il va falloir
+réduire le temps  d'intervention. Bref, vous allez  devoir revoir tout
+de A à Z.
+
+La dernière étape  étant de descendre sur le particulier  et là, c'est
+compliqué. Parce  qu'une société  est exigeante, mais  un consommateur
+est exichiant. Je vous laisse la  surprise... A vrai dire, vous n'avez
+qu'à vous imaginez dans un magasin où tout est trop cher.
+
+=== Comment trouver un associé?
+
+Si vous n'en avez pas, n'en cherchez  pas et n'en trouvez pas. Si vous
+êtes seul, il est préférable d'avoir  des salariés (CDD ou autre) dans
+des moments de fortes activités plutôt que d'avoir un associé.
+
+Si  vous en  avez  tout de  même besoin,  recherchez  une personne  de
+confiance, ce qui n'est clairement  pas évident à trouver. Ensuite, il
+est préférable  d'avoir une personne avec  qui on a déjà  travaillé et
+dont on  connait les  compétences. Finalement,  la meilleure  façon de
+savoir  si  ça  va  coller  c'est   de  faire  un  essai  de  quelques
+jours/semaines/mois.
+
+Attention, si vous  avez un associé, il est probable  qu'il reste avec
+vous pendant un bon bout de temps. Dans le cas où ça se passerait mal,
+vous serez probablement obligé de racheter  ses parts, et dans les cas
+les plus graves, de passer par un avocat et tout ce qui va avec...
+
+=== Comment trouver des clients?
+
+La meilleure méthode 
+
+=== Comment définir un tarif?
+
+La meilleure façon de  le savoir est de faire une  étude de marché. Si
+vous passez par  du portage salarial vous pouvez  toujours demander un
+ordre de prix pour le métier que vous exercez.
+
+Dans le cas de service informatique, le  TJM sur rennes varie de 350 à
+700€ selon le domaine de compétence, l'expérience, la mission & cie.
+
+=== Un coups de gueule?
+
+Évidemment! Et pas qu'un seul!
+
+Je   déteste   le  monde   de   l'informatique,   surtout  celui   des
+StartUPs. Aucune humilité,  de l'arrogance à revendre,  de la mauvaise
+foi et  du vent.   Ce sont  des structures  qui vendent  réellement du
+vent.   D'un autre  côté, ils  ont  réussi à  monétiser quelque  chose
+s'aussi banal, il faut l'admettre c'est un exploit.
+
+La French  Tech qui monopolise  l'espace de discussion et  des meetups
+sur Rennes et sa région est  aussi assez énervant. Il n'y actuellement
+aucune alternative et je trouve ça même dérangeant au possible.
+
+Beaucoup de structure qui sont opaques et qui ne devraient pas l'être,
+un manque de transparent à bien des niveaux.
+
