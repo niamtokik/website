@@ -1,5 +1,6 @@
 ASCIIDOC_BACKEND = "html"
 AUTHOR = "Mathieu Kerjouan"
+DEFAULT_LANG = "fr"
 OUTPUT_PATH = "./niamtokik.github.io"
 PATH = "./website"
 PLUGINS = ["asciidoc_reader"] 

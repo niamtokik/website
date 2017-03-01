@@ -1,26 +1,114 @@
 = Android, Creev Mark V et Remarques
 
 :date:          2017-03-01 19:00
-:modified:      2017-03-01 19:00
+:modified:      2017-03-01 21:00
 :tags:          android, creev, mark-v
 :category:      notes
 :authors:       Mathieu Kerjouan
 :status:	draft
+:lang:		fr
+
+:crosscall: https://fr.wikipedia.org/wiki/Crosscall[Crosscall]
+:nokia-e51: https://en.wikipedia.org/wiki/Nokia_E51[Nokia E51]
+:nokia-n900: https://en.wikipedia.org/wiki/Nokia_N900[Nokia N900]
+:creev-mark-v: https://www.amazon.fr/Creev-Mark-Plus-Smartphone-Bluetooth/dp/B01N3SB0R2[Creev Mark V]
+:creev: Creev[Creev]
+:jolla: https://shop.jolla.com/eu_en/cat-jolla/jolla-1.html[Jolla]
+:jolla-wikipedia: https://en.wikipedia.org/wiki/Jolla[Wikipedia]
+:inoi-r7: https://en.wikipedia.org/wiki/INOI_R7[INOI-R7]
+:sailfishos: https://sailfishos.org/[SailfishOS]
+:inoi: https://en.wikipedia.org/wiki/INOI
+:inoi-2017: https://4pda.ru/2017/02/20/336158?salt=1487649009102[2017]
+:android-6: https://www.android.com/versions/marshmallow-6-0/[Android Marshmallow (6.0)]
+:android-6-rel: https://developer.android.com/about/versions/marshmallow/android-6.0-changes.html[Android]
+:aptoide: https://www.aptoide.com/[Aptoide]
+:fdroid: https://f-droid.org/[F-Droid]
+:imil: https://imil.net/[Imil]
+:oneplus3t: https://oneplus.net/fr/3t[OnePlus 3T]
 
 == Creev Mark V
 
- * https://www.amazon.fr/Creev-Mark-Plus-Smartphone-Bluetooth/dp/B01N3SB0R2
- * http://creev.com/
+La semaine dernière mon smartphone {crosscall} odyssey a eu quelques
+soucis avec la coque arrière, la coque qui permet de protéger la
+batterie. Autant dire qu'avoir une batterie qui s'évade assez
+fréquemment c'est pas la joie. L'autre soucis: je n'ai qu'un seul
+portable. Pas possible de jouer les warlordz et de réparer le
+crosscall avec un peu coup de fer à souder, et 2 ou 3 bidouilles.
+
+Après quelques recherches et demandes sur le web, je pense avoir
+trouvé un bon rapport qualité/prix. Je n'ai pas envie de mettre plus
+de 200€ dans un portable qui ne tient pas 3ans. Pour information, le
+portable avant le crosscall était un {nokia-e51} qui m'a duré
+7ans. Entre temps, j'ai eu un {nokia-n900} qui n'a pas fait
+1an. Autant dire que je recherche quand même un minimum de qualité
+dans les téléphones.
+
+Le {creev-mark-v} conçu par la société {creev} semble répondre à ces
+problématiques. Tout d'abord il est à ~130€. Surprise que j'aurais du
+prévoir, la carte SIM est une micro-sim, autant dire que ma bonne
+vieille SIM que je trimballe depuis un sacré bout de temps (au moins
+7ans) ne rentre pas dedans! Dépense à rajouter: commander une carte
+SIM. En attendant, j'ai un abonnement de secour chez un autre
+opérateur avec une carte au bon format. Rulz.
 
 == Android Marshmallow (6.0)
 
- * https://www.android.com/versions/marshmallow-6-0/
- * https://developer.android.com/about/versions/marshmallow/android-6.0-changes.html
- * https://en.wikipedia.org/wiki/Android_Marshmallow
+Je n'ai jamais réellement aimé android, je l'ai toujours subis. J'ai
+beaucoup aimé Symbian, l'OS de Nokia qui était très stable et faisait
+ce qu'on lui demandait. J'ai aussi beaucoup aimé Meego, l'OS du N900
+basé sur une Debian. Avoir un shell directement sur son téléphone
+portable, c'est quand même sexy!
 
-== Outils externes
+Tiens d'ailleurs? Qu'est devenu le {jolla}? Outch. Rupture de
+stock. Si on en croit {jolla-wikipedia}, la société a du mal à
+survivre. Il semblerait tout de même qu'un téléphone nommé {inoi-r7}
+basé sur {sailfishos} et conçu par la société russe {inoi} sorte en
+{inoi-2017}.
 
- * https://www.aptoide.com/
- * https://f-droid.org/
+Bref. Autant dire que mon expérience avec Android est plutôt nulle. Le
+Creev Mark V utilise {android-6}. La release note est disponible sur
+la page {android-6-rel} des changements.
 
+== Migration
+
+J'utilise vraiment, mais alors vraiment très peu d'applications. À
+part le lecteur multimédia et le réveil, un téléphone reste un
+téléphone (appel + SMS). Mais, il y a quelques applications qui sont
+pas mal. {aptoide} et {fdroid} en font parties. Bon, ce ne sont pas
+réellement des applications que vous allez utiliser tous les jours,
+mais elles permettent de bypasser le google store!
+
+La première contient globalement la même base d'application que le
+google store mais sans demande d'authentification. L'autre regroupe
+des logiciels open-source, donc, permettant de voir le code source de
+l'application qui fonctionnera sur mon téléphone. À installer en
+priorité!
+
+Ensuite vient la migration des contacts. Pour se faire, un simple
+export au format vcard permet d'avoir la liste complète des contacts
+et de pouvoir l'importé vers son nouveau téléphone: rapide et
+simple. Je ne parlerais pas de la synchronisation Google. Oui tu es un
+peu trop dans ma vie en ce moment!
+
+== La critique
+
+Ce que fait ce téléphone au final? Il consomme de l'électricité
+(~2jours d'autonomies avec le wifi ou la 3G/4G). Il peut téléphoner et
+envoyer des SMS, éventuellement me donner accès à mes mails. La
+qualité de l'appareil photo est douteuse, les performances me semblent
+plutôt bonnes comparaitre à mon ancien téléphone android. L'écran est
+(beaucoup trop) grand, 5.5" c'est pas génial, ça fait presque tablette
+dans la poche!
+
+Pour faire ça vite: c'est un téléphone portable pour moins de 200€, on
+verra ce qu'il va donner. {imil} m'a
+https://twitter.com/iMilnb/status/835061460678107137[conseillé] le
+{oneplus3t} et il a l'air vraiment pas mal! L'avenir nous le dira! 
+
+== La conclusion
+
+Mon {crosscall} odyssey fonctionne encore, mais ayant maintenant un
+téléphone fonctionnel de secour, je vais pouvoir m'amuser à le réparer
+et à le bidouiller en profondeur. Ça sera probablement le sujet d'un
+nouvel article.
 
