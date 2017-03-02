@@ -1,0 +1,9 @@
+= BSDA Certification
+
+:tags:     bsda, certification, bsd, freebsd, openbsd, netbsd
+:category: certification
+:authors:  Mathieu Kerjouan
+:lang:     en
+:draft:    true
+
+== BSDA Certifications Notes

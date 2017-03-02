@@ -1,0 +1,11 @@
+= Assembly
+
+:tags:     asm, assembly, programming
+:category: coding
+:slug:     asm-programming
+:authors:  Mathieu Kerjouan
+:summary:  ASM programming notes 
+:lang:     en
+:draft:    true
+
+== Programming in assembly

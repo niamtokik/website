@@ -1,0 +1,11 @@
+= Perl
+
+:tags:     perl, programming
+:category: coding
+:slug:     perl-programming
+:authors:  Mathieu Kerjouan
+:summary:  Perl programming notes 
+:lang:     en
+:draft:    true
+
+== Programming in Perl

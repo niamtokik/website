@@ -1,0 +1,164 @@
+= C
+
+:tags:     c, programming
+:category: coding
+:slug:     c-programming
+:authors:  Mathieu Kerjouan
+:summary:  C programming notes 
+:lang:     en
+:draft:    true
+
+== Programming in C
+
+== Datastructure in C
+
+=== Functions pointers
+
+.object as structure in C
+[c]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+typedef struct test {
+  void (*myfunction)();
+  void (*myfunction2)(int);
+} test;
+
+// test t;
+// t->myfunction = &my_defined_function;
+// t->myfunction2 = &my_defined_function2;
+// t->myfunction();
+// t->myfunction2(1);
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== Standard library
+
+== Concurrent and Parallel programming in C
+
+== Compilating
+
+=== Using gcc
+
+ * https://gcc.gnu.org/
+ * http://unknownroad.com/rtfm/gdbtut/
+ * http://web.mit.edu/gnu/doc/html/gdb_1.html
+
+=== Using clang/llvm
+
+ * http://clang.llvm.org/
+
+=== Using tcc
+
+ * http://bellard.org/tcc/
+
+== Testing
+
+== Debugging
+
+=== Using gdb
+
+=== Using radare2
+
+== Securise
+
+== Documenting
+
+== Misc
+
+=== User-land programming
+
+=== Kernel-land programming
+
+
+//////////////////////////////////////////////////////////////////////
+// Annexes
+//////////////////////////////////////////////////////////////////////
+
+== FAQ
+
+=== Coding
+
+==== How to insert assembly?
+
+.gcc
+[c]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+__asm__("movl %edx, %eax\n\t"
+        "addl $2, %eax\n\t");
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ * http://stackoverflow.com/questions/61341/is-there-a-way-to-insert-assembly-code-into-c
+ * http://www.codeproject.com/Articles/15971/Using-Inline-Assembly-in-C-C
+ * http://www.nongnu.org/avr-libc/user-manual/inline_asm.html
+
+=== Testing
+
+=== Debugging
+
+==== How to use intel assembly format instead of AT&T?
+
+.gdb
+[txt]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+set disassembly-flavor intel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+==== How to print struct content?
+
+.gdb
+[txt]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+print my_struct
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+==== How to print one element of structure?
+
+.gdb
+[txt]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+print my_struct->my_key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+==== How to print CPU registers?
+
+.gdb
+[txt]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+info registers
+i r
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+==== How to print content of piece of memory?
+
+.example
+[c]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+typedef int64_t page[512];
+typedef int64_t *pages;
+
+int main(void) {
+  page test[512];
+  *test[0] = 1;
+  *test[1] = 2;
+  *test[2] = 3;
+  *test[511] = 5;
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.gdb
+[txt]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+x    0xaddre55     // print content of address 0xaddre55
+x/g  0xaddre55     // "
+x/20 0xaddre55     // "
+x/g  test          // print content of variable test
+x/g  test+(4096*2) // print content of test[1][0]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== References
+
+=== Links
+
+ * http://c-faq.com/
+ * http://jemalloc.net/
+ * http://www.hoard.org/
+
+=== Books

@@ -1,0 +1,11 @@
+= Go
+
+:tags:     go, programming
+:category: coding
+:slug:     go-programming
+:authors:  Mathieu Kerjouan
+:summary:  Go programming notes 
+:lang:     en
+:draft:    true
+
+== Programming in Go

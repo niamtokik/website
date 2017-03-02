@@ -1,0 +1,11 @@
+= Erlang
+
+:tags:     erlang, programming
+:category: coding
+:slug:     erlang-programming
+:authors:  Mathieu Kerjouan
+:summary:  Erlang programming notes 
+:lang:     en
+:draft:    true
+
+== Programming in Erlang

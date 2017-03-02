@@ -1,0 +1,11 @@
+= Clojure
+
+:tags:     clojure, programming
+:category: coding
+:slug:     clojure-programming
+:authors:  Mathieu Kerjouan
+:summary:  Clojure programming notes 
+:lang:     en
+:draft:    true
+
+== Programming in Clojure
