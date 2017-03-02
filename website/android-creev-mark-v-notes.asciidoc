@@ -2,7 +2,7 @@
 
 :date:          2017-03-01 19:00
 :modified:      2017-03-01 21:00
-:tags:          android, creev, mark-v
+:tags:          android, creev, mark-v, smartphone
 :category:      notes
 :authors:       Mathieu Kerjouan
 :status:	draft
@@ -25,8 +25,10 @@
 :fdroid: https://f-droid.org/[F-Droid]
 :imil: https://imil.net/[Imil]
 :oneplus3t: https://oneplus.net/fr/3t[OnePlus 3T]
+:symbian: https://en.wikipedia.org/wiki/Symbian[Symbian]
+:meego: https://en.wikipedia.org/wiki/MeeGo[MeeGo]
 
-== Creev Mark V
+== Creev Mark V Plus
 
 La semaine dernière mon smartphone {crosscall} odyssey a eu quelques
 soucis avec la coque arrière, la coque qui permet de protéger la
@@ -54,10 +56,10 @@ opérateur avec une carte au bon format. Rulz.
 == Android Marshmallow (6.0)
 
 Je n'ai jamais réellement aimé android, je l'ai toujours subis. J'ai
-beaucoup aimé Symbian, l'OS de Nokia qui était très stable et faisait
-ce qu'on lui demandait. J'ai aussi beaucoup aimé Meego, l'OS du N900
-basé sur une Debian. Avoir un shell directement sur son téléphone
-portable, c'est quand même sexy!
+beaucoup aimé {symbian}, l'OS de Nokia qui était très stable et
+faisait ce qu'on lui demandait. J'ai aussi beaucoup aimé {meego}, l'OS
+du {nokia-n900} basé sur une Debian. Avoir un shell directement sur
+son téléphone portable, c'est quand même sexy!
 
 Tiens d'ailleurs? Qu'est devenu le {jolla}? Outch. Rupture de
 stock. Si on en croit {jolla-wikipedia}, la société a du mal à
@@ -111,4 +113,3 @@ Mon {crosscall} odyssey fonctionne encore, mais ayant maintenant un
 téléphone fonctionnel de secour, je vais pouvoir m'amuser à le réparer
 et à le bidouiller en profondeur. Ça sera probablement le sujet d'un
 nouvel article.
-
