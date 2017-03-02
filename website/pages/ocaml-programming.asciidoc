@@ -1,0 +1,11 @@
+= OCaml
+
+:tags:     ocaml, programming
+:category: coding
+:slug:     ocaml-programming
+:authors:  Mathieu Kerjouan
+:summary:  OCaml programming notes 
+:lang:     en
+:draft:    true
+
+== Programming in Ocaml

@@ -1,0 +1,13 @@
+= Haskell
+
+:tags:     haskell, programming
+:category: coding
+:slug:     haskell-programming
+:authors:  Mathieu Kerjouan
+:summary:  Haskell programming notes 
+:lang:     en
+:draft:    true
+
+== Programming in Haskell
+
+== Using ghci

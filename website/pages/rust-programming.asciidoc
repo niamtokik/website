@@ -1,0 +1,11 @@
+= Rust
+
+:tags:     rust, programming
+:category: coding
+:slug:     rust-programming
+:authors:  Mathieu Kerjouan
+:summary:  Rust programming notes 
+:lang:     en
+:draft:    true
+
+== Programming in Rust
