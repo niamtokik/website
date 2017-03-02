@@ -12,6 +12,7 @@ All Rights Reserved
 :category:      coding
 :authors:       Mathieu Kerjouan
 :status:	draft
+:translation: false
 
 == Introduction
 

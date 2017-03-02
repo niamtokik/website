@@ -1,6 +1,8 @@
 ASCIIDOC_BACKEND = "html"
+DEFAULT_DATE = "fs"
 DEFAULT_LANG = "fr"
 OUTPUT_PATH = "./niamtokik.github.io_dev"
+OUTPUT_RETENTION = [".git", ".gitignore"]
 PATH = "./website"
 PLUGINS = ["asciidoc_reader"] 
 PLUGIN_PATHS = ["./pelican-plugins"]

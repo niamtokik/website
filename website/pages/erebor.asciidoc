@@ -1,0 +1,13 @@
+= Erebor project
+
+:date: 		2017-02-23 10:00
+:modified: 	2017-02-23 15:10
+:tags: 		erebor
+:category: 	project
+:authors: 	Mathieu Kerjouan
+:lang: fr
+:translation: false
+
+== Introduction
+
+

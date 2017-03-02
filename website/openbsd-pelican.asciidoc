@@ -6,6 +6,8 @@
 :category: 	coding
 :slug: 		openbsd-pelican-asciidoc
 :authors: 	Mathieu Kerjouan
+:lang: en
+:translation: false
 
 == Required packages
 

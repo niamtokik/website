@@ -1,7 +1,7 @@
 = Android, Creev Mark V et Remarques
 
 :date:          2017-03-01 19:00
-:modified:      2017-03-01 21:00
+:modified:      2017-03-02 6:00
 :tags:          android, creev, mark-v, smartphone
 :category:      notes
 :authors:       Mathieu Kerjouan
@@ -12,15 +12,18 @@
 :nokia-e51: https://en.wikipedia.org/wiki/Nokia_E51[Nokia E51]
 :nokia-n900: https://en.wikipedia.org/wiki/Nokia_N900[Nokia N900]
 :creev-mark-v: https://www.amazon.fr/Creev-Mark-Plus-Smartphone-Bluetooth/dp/B01N3SB0R2[Creev Mark V]
-:creev: Creev[Creev]
+:creev: http://creev.com/[Creev]
 :jolla: https://shop.jolla.com/eu_en/cat-jolla/jolla-1.html[Jolla]
 :jolla-wikipedia: https://en.wikipedia.org/wiki/Jolla[Wikipedia]
 :inoi-r7: https://en.wikipedia.org/wiki/INOI_R7[INOI-R7]
 :sailfishos: https://sailfishos.org/[SailfishOS]
-:inoi: https://en.wikipedia.org/wiki/INOI
+:inoi: https://en.wikipedia.org/wiki/INOI[INOI]
 :inoi-2017: https://4pda.ru/2017/02/20/336158?salt=1487649009102[2017]
 :android-6: https://www.android.com/versions/marshmallow-6-0/[Android Marshmallow (6.0)]
 :android-6-rel: https://developer.android.com/about/versions/marshmallow/android-6.0-changes.html[Android]
+:android-source: https://android.googlesource.com/
+:android-env-doc: https://source.android.com/source/initializing.html
+:android-source-doc: https://source.android.com/source/downloading.html
 :aptoide: https://www.aptoide.com/[Aptoide]
 :fdroid: https://f-droid.org/[F-Droid]
 :imil: https://imil.net/[Imil]
@@ -69,7 +72,18 @@ basé sur {sailfishos} et conçu par la société russe {inoi} sorte en
 
 Bref. Autant dire que mon expérience avec Android est plutôt nulle. Le
 Creev Mark V utilise {android-6}. La release note est disponible sur
-la page {android-6-rel} des changements.
+la page {android-6-rel} des changements. Android étant un logiciel
+Open-Source, le code est {android-source}[librement accessible]. Vous
+y trouverez une quantité importante de dépôts git. Pour les plus
+courageux, qui voudraient compiler leur propre version d'android, il
+vous faudra créer un {android-env-doc}[environnement de compilation]
+puis récupérer les {android-source-doc}[sources]. Ça se passe sous
+Debian, mais qui sait? On pourrait essayer de lancer tout ça sur Void?
+
+[sh]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 == Migration
 
