@@ -137,16 +137,51 @@ nous allons écouter ce qui se passe sur l'interface...
 .Configuration de l'interface réseau (`/etc/hostname.athn0`)
 [txt]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+up
+inet 10.42.42.1/24
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+NOTE: il est préférable de configurer aussi le forward d'ipv4 `sysctl
+net.inet.ip.forwarding=1`, ce qui sera potentiellement utile si vous
+voulez faire transiter certains paquets sur internet.
 
 .Configuration de packet filter (`/etc/pf.conf`)
 [txt]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ext = "re0"
+priv = "10.42.42.0/24"
+
+# NAT
+# match out from $priv to any nat-to $ext source-hash static-port
+
+# log all blocked packet
+block log
+pass out
+
+# icmpv4 
+pass quick proto icmp
+
+# q&d dhcpd
+pass on athn proto udp from $priv to port {546, 547} keep state
+pass on athn proto udp from port {546, 547} to $priv keep state
+
+# allow http/https connexion to outside world
+# pass proto tcp from $priv to port {http, https} keep state
+# pass proto tcp from $priv to port {smtp} keep state
+
+# allow domain/http/https to this router
+pass in quick proto tcp from $priv to (athn) port {http, https} keep state
+pass in quick proto {udp, tcp} from $priv to (athn) port {domain} keep state
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .Configuration du serveur DHCP (`/etc/dhcpd.conf`)
 [txt]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+subnet 10.42.42.0 netmask 255.255.255.0 {
+  range 10.42.42.16 10.42.42.31;
+  option routers 10.42.42.1;
+  option domain-name-servers 10.42.42.1;
+}
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .Visualisation de l'activité réseau
@@ -195,19 +230,51 @@ Host script results:
 |_clock-skew: mean: -36s, deviation: 0s, median: -36s
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Bon, on va essayé de voir ce qu'il envoit sur le serveur distant, pour
+Bon, on va essayer de voir ce qu'il envoit sur le serveur distant, pour
 ça on va simplement faire un petit forward DNS avec unbound et
 démarrer notre serveur HTTP.
 
 .Configuration du serveur DNS (`/var/unbound/etc/unbound.conf`)
 [txt]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+server:
+  interface: 10.42.42.1
+  hide-identity: yes
+  hide-version: yes
+  do-ip6: yes
+
+  access-control: 0.0.0.0/0 refuse
+  access-control: 10.42.42.0/24 allow
+
+  local-zone: "fota.advmob.cn." redirect
+  local-data: "fota.advmob.cn. IN A 10.42.42.1"
+
+remote-control:
+  control-enable: yes
+  control-interface: /var/run/unbound.sock
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+La configuration d'unbound est légère, le serveur écoute sur
+l'interface `10.42.42.1` sur les ports par défaut (tcp/53 et udp/53),
+il refuse toutes les connexions sauf celles en provenance de
+`10.42.42.0/24`. Une zone locale est créé, nommée `fota.advmob.cn.`
+qui, comme vous l'avez deviné, représente notre serveur distant. Dans
+notre cas, le serveur DNS en question va répondre à cette réquête non
+pas `118.193.254.19` mais `10.42.42.1`, notre serveur HTTP.
+
+La dernière partie permet simplement de controler unbound via
+unbound-control (et donc via les scripts rc).
 
 .Configuration du serveur web (`/etc/httpd.conf`)
 [txt]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+server "default" {
+       listen on 10.42.42.1 port 80
+}
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Le serveur httpd est configuré de la manière la plus simple
+possible. Écoute sur le 80... Et c'est tout.
 
 .Visualisation du traffic DNS et HTTP
 [sh]
@@ -221,11 +288,15 @@ tcpdump -i athn0 -XX -vvvv -s 1500 -n \
   \)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.Extrait des logs
+Cette commande permet d'afficher le traffic complet (MTU 1500) avec
+une verbosité forte circulant sur l'interface athn0 (notre hotspot
+wifi), et de ne récupérer que les paquets contenant l'hote ayant
+l'adresse ip `10.42.42.16` (l'adresse IP du smartphone) sur les ports
+tcp/80 (http), tcp/443 (https), udp/53 et tcp/53 (domain).
+
+.extrait tcpdump, premier paquet HTTP
 [txt]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-... (1) ...
-
 18:48:37.810261 10.42.42.16.34891 > 10.42.42.1.80: P [tcp sum ok]
 1:209(208) ack 1 win 1369 <nop,nop,timestamp 4780748 3398050832> (DF)
 (ttl 64, id 26819, len 260)
@@ -246,9 +317,11 @@ tcpdump -i athn0 -XX -vvvv -s 1500 -n \
   00e0: 7474 7043 6c69 656e 742f 554e 4156 4149  ttpClient/UNAVAI
   00f0: 4c41 424c 4520 286a 6176 6120 312e 3429  LABLE (java 1.4)
   0100: 0d0a 0d0a                                ....
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-... (2) ...
-
+.extrait tcpdump, deuxième paquet HTTP (contenu du POST)
+[txt]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 18:48:37.811022 10.42.42.16.34891 > 10.42.42.1.80: P [tcp sum ok]
 209:495(286) ack 1 win 1369 <nop,nop,timestamp 4780748 3398050832>
 (DF) (ttl 64, id 26820, len 338)
@@ -276,16 +349,44 @@ tcpdump -i athn0 -XX -vvvv -s 1500 -n \
   0150: 723d                                     r=
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Qu'est-ce qu'on apprend? Qu'il envoit des données avec une méthode
-POST sur la page `/dm/pushInterface.do` en HTTP/1.1. Okay. On va
-arrêter tout de suite avec httpd et essayer de mapper tout ça avec un
-micro-framework.
+ * https://en.wikipedia.org/wiki/Over-the-air_programming
+ * https://source.android.com/devices/tech/ota/
+ * https://developer.mbed.org/forum/team-63-Bluetooth-Low-Energy-community/topic/5169/
+ * http://www.redbend.com/data/upl/whitepapers/Red_Bend_FOTA_Best_Practices_White_Paper.pdf
+ * https://docs.mbed.com/docs/ble-intros/en/latest/Advanced/FOTA/
+ * https://www.link-labs.com/blog/firmware-over-the-air-fota-with-lora
+ * https://www.os3.nl/_media/2013-2014/courses/ssn/projects/android_ota_update_report.pdf
+ * https://esp8266.github.io/Arduino/versions/2.0.0/doc/ota_updates/ota_updates.html
+ * http://www.opentravel.org/Resources/Uploads/PDF/OTA_Architecture_Review.pdf
+ * http://www.oracle.com/technetwork/systems/ota-156595.html
 
-=== Configuration du téléphone
+ * https://source.android.com/devices/tech/ota/tools.html
+ * https://source.android.com/devices/tech/ota/inside_packages.html
+ * https://github.com/mitchellurgero/OpenOTA
+ * https://www.contextis.com/resources/blog/targeting-android-ota-exploitation/
 
-== La conclusion
+ * http://www.wheatek.com/en/index.jsp
 
-Mon {crosscall} odyssey fonctionne encore, mais ayant maintenant un
-téléphone fonctionnel de secour, je vais pouvoir m'amuser à le réparer
-et à le bidouiller en profondeur. Ça sera probablement le sujet d'un
-nouvel article.
+ * http://man.openbsd.org/OpenBSD-current/man8/tcpdump.8
+ * http://man.openbsd.org/OpenBSD-current/man8/ifconfig.8
+ * http://man.openbsd.org/OpenBSD-current/man5/hostname.if.5
+ * http://man.openbsd.org/OpenBSD-current/man8/httpd.8
+ * http://man.openbsd.org/OpenBSD-current/man8/unbound.8
+ * http://man.openbsd.org/OpenBSD-current/man5/dhcpd.conf.5
+ * http://man.openbsd.org/OpenBSD-current/man8/dhcpd.8
+ * https://www.freebsd.org/cgi/man.cgi?query=nmap
+ * https://metacpan.org/release/Dancer2
+
+=== Debug android avec ADB
+
+ * https://developer.android.com/studio/command-line/adb.html
+ * http://adbshell.com/
+ * https://github.com/pfalcon/awesome-linux-android-hacking
+ * http://www.vogella.com/tutorials/AndroidCommandLine/article.html
+ * http://stackoverflow.com/questions/35816964/how-to-get-usb-debugging-on-android-6-working
+ * https://www.thepolyglotdeveloper.com/2014/12/debugging-android-source-code-adb/
+ * https://stuff.mit.edu/afs/sipb/project/android/docs/tools/debugging/index.html
+ * http://jacobkorsgaard.com/?p=518
+ * https://github.com/dogriffiths/HeadFirstAndroid/wiki/Some-useful-adb-commands
+ * https://github.com/operando/Android-Command-Note
+ * https://github.com/cstyan/adbDocumentation
